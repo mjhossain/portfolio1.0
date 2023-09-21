@@ -1,0 +1,14 @@
+:root {
+    --green: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--green);
+}
