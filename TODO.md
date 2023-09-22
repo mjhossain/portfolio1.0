@@ -1,5 +1,5 @@
 # TODOs
 
-- [ ] fix social link
+- [x] fix social link
 - [ ] make social btns into component
 - [ ] finalize homepage
