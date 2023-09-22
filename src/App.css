@@ -28,7 +28,7 @@ a {
 .home {
     height: 100%;
     width: 100vw;
-    background-color: var(--black);
+    /* background-color: var(--black); */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -37,6 +37,7 @@ a {
     overflow-y: scroll;
     overflow-x: hidden;
     /* align-items: center; */
+
 }
 
 .header {
@@ -87,6 +88,8 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     /* background-position: 2em; */
+    /* background: rgb(12, 3, 27);
+    background: linear-gradient(180deg, rgba(12, 3, 27, 1) 46%, rgba(52, 221, 248, 1) 100%); */
 
 }
 
