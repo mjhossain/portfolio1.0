@@ -20,7 +20,12 @@ export default function Body() {
                 </div>
                 <img src={CoderSVG} alt="Coder SVG" />
             </div>
+            <div className="spacer layer1"></div>
             <Skills />
+            <div className="spacer layer2"></div>
+            <div className="projects">
+                
+            </div>
         </div>
     )
 }

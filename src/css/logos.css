@@ -1,11 +1,12 @@
 .logos {
     position: absolute;
-    opacity: 0.03;
+    opacity: 0.05;
+    color: black;
 }
 
 .logo-1 {
     left: 2em;
-    top: -80px;
+    top: 1%;
 }
 
 .logo-2 {
@@ -30,7 +31,7 @@
 
 .logo-6 {
     left: 3%;
-    bottom: -2%;
+    bottom: 2%;
 }
 
 .logo-7 {
@@ -45,11 +46,11 @@
 
 .logo-9 {
     right: 20%;
-    top: -10%;
+    top: 1%;
 }
 
 .logo-10 {
-    bottom: -4%;
+    bottom: 8%;
     left: 25%;
 }
 

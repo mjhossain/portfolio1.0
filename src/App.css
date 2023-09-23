@@ -27,7 +27,7 @@ a {
 
 .home {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     /* background-color: var(--black); */
     display: flex;
     flex-flow: column nowrap;
@@ -44,7 +44,7 @@ a {
     height: 80px;
     width: 100vw;
     background-color: #111112;
-    border-bottom: 2px solid #34ddf8;
+    border-bottom: 2px solid var(--primary);
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -59,16 +59,16 @@ a {
 
 .header>a {
     /* text-decoration: none; */
-    color: #34ddf8 !important;
+    color: var(--primary) !important;
 }
 
 .header a:visited {
-    color: #34ddf8;
+    color: var(--primary);
 }
 
 .mo {
     /* font-weight: 600; */
-    color: #34ddf8;
+    color: var(--primary);
     /* color: var(--dark); */
 }
 
@@ -92,10 +92,11 @@ a {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    background-color: #111112;
     /* background-color: #61ce70; */
-    background-image: url('./assets/retrogrid-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
+    /* background-image: url('./assets/retrogrid-bg.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: contain; */
     /* background-position: 2em; */
     /* background: rgb(12, 3, 27);
     background: linear-gradient(180deg, rgba(12, 3, 27, 1) 46%, rgba(52, 221, 248, 1) 100%); */
@@ -103,13 +104,14 @@ a {
 }
 
 .about {
-    height: 100vh;
+    height: 100%;
     width: 80%;
+    padding-top: 120px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
+    /* background-color: #0c031b; */
 }
 
 .intro-text {
@@ -120,7 +122,7 @@ a {
 }
 
 .hi {
-    color: var(--light);
+    color: var(--primary);
     font-weight: 100;
 }
 
@@ -142,16 +144,14 @@ a {
 .skills {
     height: 600px;
     width: 100vw;
-    background-color: var(--dark);
+    background-color: var(--primary);
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url('./assets/skills-bg.jpg'); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
+
 }
 
 .skills-content {
@@ -177,7 +177,7 @@ a {
     height: 40px;
     width: 120px;
     border-radius: 10px;
-    background-color: #34ddf8;
+    background-color: var(--primary);
     -webkit-box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
@@ -186,4 +186,31 @@ a {
     justify-content: space-evenly;
     align-items: center;
     margin-right: 1.4em;
+}
+
+.projects {
+    height: 400px;
+    width: 100vw;
+    background-color: #111112;
+}
+
+
+/* Spacer Design Classes */
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -1%;
+}
+
+.layer1 {
+    background-image: url(./assets/bg-spacer.svg);
+}
+
+.layer2 {
+    margin-top: -1%;
+    background-image: url(./assets/bg-spacer-2.svg);
 }
