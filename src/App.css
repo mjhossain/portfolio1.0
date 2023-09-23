@@ -142,13 +142,14 @@ a {
 }
 
 .skills {
-    height: 600px;
+    height: 500px;
     width: 100vw;
     background-color: var(--primary);
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 
@@ -157,12 +158,62 @@ a {
 .skills-content {
     width: 50%;
     height: 100%;
-    color: wheat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .skills-content>p {
     margin: 100px 0 100px 0;
 }
+
+.skills-showcase {
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.box {
+    width: auto;
+    height: 200px;
+    background-color: #111112;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.box>h2 {
+    margin-bottom: 10%;
+    align-self: flex-start;
+    font-weight: 200;
+}
+
+.box>h2::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-left: 6px;
+}
+
+
+
+
+
+/* Social Buttons */
 
 .social-btns {
     height: 100%;
@@ -175,7 +226,7 @@ a {
 
 .link-btn {
     height: 40px;
-    width: 120px;
+    width: 180px;
     border-radius: 10px;
     background-color: var(--primary);
     -webkit-box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
@@ -186,6 +237,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     margin-right: 1.4em;
+    font-size: 0.8em;
 }
 
 .projects {

@@ -8,7 +8,21 @@ export default function Skills() {
         <div className="skills">
 
             <div className="skills-content">
-               
+                <h2>Skills // Tools</h2>
+                <div className="skills-showcase">
+                    <div className="box">
+                        <h2>Development</h2>
+                        <p>Java, Python, JavaScript, Dart, PHP, SQL, MongoDB, React, FastAPI, NodeJS, Flutter, Firebase</p>
+                    </div>
+                    <div className="box">
+                        <h2>Operations</h2>
+                        <p>Cloud Computing, Docker, Virtualization, Networking, CI/CD, Git, Automation, Linux Shell Scripting</p>
+                    </div>
+                    <div className="box">
+                        <h2>Security</h2>
+                        <p>SIEM, LOG Analysis, Packet Analysis, Security Controls, Security Frameworks</p>
+                    </div>
+                </div>
             </div>
 
             <div className="logos-body">
