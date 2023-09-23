@@ -1,0 +1,59 @@
+.logos {
+    position: absolute;
+    opacity: 0.03;
+}
+
+.logo-1 {
+    left: 2em;
+    top: -80px;
+}
+
+.logo-2 {
+    right: 25%;
+    top: 20%;
+}
+
+.logo-3 {
+    left: -3%;
+    top: 24%;
+}
+
+.logo-4 {
+    right: -5%;
+    top: 2%;
+}
+
+.logo-5 {
+    right: 6%;
+    bottom: 10%;
+}
+
+.logo-6 {
+    left: 3%;
+    bottom: -2%;
+}
+
+.logo-7 {
+    right: 30%;
+    bottom: 5%;
+}
+
+.logo-8 {
+    left: 25%;
+    bottom: 55%;
+}
+
+.logo-9 {
+    right: 20%;
+    top: -10%;
+}
+
+.logo-10 {
+    bottom: -4%;
+    left: 25%;
+}
+
+.logo-11 {
+    top: -4%;
+    right: 45%;
+}

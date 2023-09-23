@@ -57,6 +57,15 @@ a {
     font-size: 2em;
 }
 
+.header>a {
+    /* text-decoration: none; */
+    color: #34ddf8 !important;
+}
+
+.header a:visited {
+    color: #34ddf8;
+}
+
 .mo {
     /* font-weight: 600; */
     color: #34ddf8;
@@ -112,15 +121,16 @@ a {
 
 .hi {
     color: var(--light);
+    font-weight: 100;
 }
 
 .hi::after {
     content: '';
     display: block;
-    width: 30%;
+    width: 38%;
     height: 4px;
     background-color: rgb(205, 44, 44);
-    margin: -6px 0 0 4px;
+    margin: -5px 0 0 4px;
 }
 
 .about>img {
@@ -132,10 +142,26 @@ a {
 .skills {
     height: 600px;
     width: 100vw;
-    /* background-color: var(--dark); */
-    background-image: url('./assets/skills-bg.jpg');
+    background-color: var(--dark);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('./assets/skills-bg.jpg'); */
     /* background-size: contain; */
     /* background-repeat: no-repeat; */
+}
+
+.skills-content {
+    width: 50%;
+    height: 100%;
+    color: wheat;
+}
+
+.skills-content>p {
+    margin: 100px 0 100px 0;
 }
 
 .social-btns {

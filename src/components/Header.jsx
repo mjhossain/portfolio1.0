@@ -3,10 +3,10 @@ export default function Header() {
         <div className="header">
             <p><span className="mo">Mo</span>InTech</p>
             <ul className="navbar">
-                <li>About</li>
-                <li>Skill</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="">About</a></li>
+                <li><a href="">Skill</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </div>
     )
