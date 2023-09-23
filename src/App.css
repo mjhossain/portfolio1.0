@@ -130,9 +130,12 @@ a {
 }
 
 .skills {
-    height: 500px;
+    height: 600px;
     width: 100vw;
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
+    background-image: url('./assets/skills-bg.jpg');
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
 }
 
 .social-btns {
