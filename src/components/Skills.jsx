@@ -5,10 +5,10 @@ import '../css/logos.css'
 
 export default function Skills() {
     return(
-        <div className="skills">
+        <div className="skills"  id="skills">
 
             <div className="skills-content">
-                <h2>Skills // Tools</h2>
+                <h1>Skills // Tools</h1>
                 <div className="skills-showcase">
                     <div className="box">
                         <h2>Development</h2>
