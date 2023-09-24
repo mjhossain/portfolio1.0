@@ -1,0 +1,72 @@
+@import '../index.css';
+
+.skills {
+    height: 500px;
+    width: 100vw;
+    background-color: var(--primary);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.skills-content>p {
+    margin: 100px 0 100px 0;
+}
+
+.skills-showcase {
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.box {
+    width: auto;
+    height: 200px;
+    background-color: #111112;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+    -webkit-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
+}
+
+.box>h2 {
+    margin-bottom: 10%;
+    align-self: flex-start;
+    font-weight: 200;
+}
+
+.box>h2::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-left: 6px;
+}

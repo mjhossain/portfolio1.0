@@ -1,0 +1,19 @@
+/* Spacer Design Classes */
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -1%;
+}
+
+.layer1 {
+    background-image: url(../assets/bg-spacer.svg);
+}
+
+.layer2 {
+    margin-top: -1%;
+    background-image: url(../assets/bg-spacer-2.svg);
+}

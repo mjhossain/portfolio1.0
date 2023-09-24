@@ -1,3 +1,4 @@
+import '../css/Skills.css'
 import { BiLogoReact, BiLogoPython, BiLogoDocker, BiLogoFirebase, BiLogoPostgresql, BiLogoJava, BiLogoFlutter, BiLogoMongodb } from 'react-icons/bi'
 import { BsFiletypeJson } from 'react-icons/bs'
 import { SiFastapi, SiGnubash } from 'react-icons/si'

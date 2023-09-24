@@ -1,0 +1,18 @@
+@import '../index.css';
+
+.projects {
+    height: 600px;
+    width: 100vw;
+    background-color: #111112;
+    position: relative;
+
+}
+
+.coder-bot {
+    position: absolute;
+    height: 400px;
+    width: auto;
+    opacity: 0.05;
+    right: -10%;
+    top: 10%;
+}

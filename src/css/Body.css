@@ -1,0 +1,84 @@
+@import '../index.css';
+@import '../css/main.css';
+
+.body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #111112;
+}
+
+.about {
+    height: 100%;
+    width: 80%;
+    padding-top: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0c031b; */
+}
+
+.intro-text {
+    color: #e7e7e7;
+    width: 60%;
+    margin-top: -2em;
+    line-height: 1.2em;
+}
+
+.hi {
+    color: var(--primary);
+    font-weight: 100;
+}
+
+.hi::after {
+    content: '';
+    display: block;
+    width: 310px;
+    height: 8px;
+    background-color: rgb(205, 44, 44);
+    margin: -5px 0 0 4px;
+}
+
+.about>img {
+    height: 600px;
+    width: auto;
+    margin-left: auto;
+}
+
+
+/* Social Buttons */
+
+.social-btns {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.link-btn {
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1.4em;
+    font-size: 0.8em;
+    color: #111112;
+    -webkit-box-shadow: 7px 6px 21px -9px rgba(97, 206, 111, 1);
+    -moz-box-shadow: 7px 6px 21px -9px rgba(97, 206, 111, 1);
+    box-shadow: 7px 6px 21px -9px rgba(97, 206, 111, 1);
+}
+
+.link-btn:hover {
+    transform: scale(1.2);
+    transition: 0.6s;
+}

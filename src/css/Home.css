@@ -1,0 +1,16 @@
+@import '../index.css';
+@import '../css/main.css';
+
+.home {
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--black); */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* align-items: center; */
+}
