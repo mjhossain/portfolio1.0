@@ -1,5 +1,5 @@
 import '../css/Body.css';
-import CoderSVG from "../assets/coder-2.png"
+import CoderSVG from "../assets/coder-3.svg"
 import { AiFillGithub, AiFillLinkedin, AiOutlineCloudDownload } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri';
 import Resume from '../assets/MohammedJHossain.pdf'
