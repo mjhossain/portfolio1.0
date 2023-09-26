@@ -9,16 +9,18 @@
     justify-content: center;
     align-items: center;
     background-color: #111112;
+    /* position: absolute; */
 }
 
 .about {
     height: 100%;
-    width: 70%;
+    width: 100%;
     padding-top: 120px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     margin-top: 3%;
     position: relative;
     /* background-color: #0c031b; */
@@ -26,7 +28,7 @@
 
 .intro-text {
     color: #e7e7e7;
-    width: 60%;
+    width: 45%;
     margin-top: -2em;
     line-height: 1.2em;
     /* padding: 20px; */
@@ -51,8 +53,8 @@
 .about>img {
     height: 350px;
     width: auto;
-    /* position: absolute; */
-    margin-left: 10%;
+    position: relative;
+    /* margin-left: 10%; */
 }
 
 

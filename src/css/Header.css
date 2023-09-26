@@ -23,9 +23,10 @@
     color: var(--primary) !important;
 }
 
-.header a:visited {
-    color: var(--primary);
+.header a:any-link {
+    color: var(--primary) !important;
 }
+
 
 .mo {
     /* font-weight: 600; */

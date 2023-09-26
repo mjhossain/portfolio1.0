@@ -3,39 +3,42 @@
         "id": 1,
         "name": "portfolio1.0",
         "desc": "This is my current portfolio website that I developed using React. I used a CI/CD pipeline using GitHub Actions to dockerize my application and deploy it in my own server hosted in linode.",
-        "tech-used": [
+        "tech": [
             "react",
             "git",
             "docker",
             "ci/cd",
             "linode"
         ],
-        "img": "path_to_img",
-        "position": "left"
+        "img": "../src/assets/portfolio.png",
+        "github": "",
+        "demo": ""
     },
     {
         "id": 2,
         "name": "xTrack",
         "desc": "xTrack is a application that tracks expense created for a school project using PHP & MySQL",
-        "tech-used": [
+        "tech": [
             "php",
             "mysql",
             "apache"
         ],
-        "img": "path_to_img",
-        "position": "right"
+        "img": "../src/assets/xtrack.png",
+        "github": "https://github.com/mjhossain/xtrack",
+        "demo": "https://xtrack.mointech.dev"
     },
     {
         "id": 3,
         "name": "terminal-note",
         "desc": "terminal-note is a note taking app I developed in order to take quick notes from a command-line interface using Python. It has 2 variation, the first one uses a json file, and the second one uses a sql database.",
-        "tech-used": [
-            "python3",
+        "tech": [
+            "python",
             "mysql",
             "json",
             "cli"
         ],
-        "img": "path_to_img",
-        "position": "left"
+        "img": "../src/assets/term-app.png",
+        "github": "https://github.com/mjhossain/note-app-python",
+        "demo": ""
     }
 ]
