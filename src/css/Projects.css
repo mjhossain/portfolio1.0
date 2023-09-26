@@ -51,3 +51,11 @@
     right: -10%;
     top: 10%;
 }
+
+#left {
+    background-color: red;
+}
+
+#right {
+    background-color: blue;
+}
