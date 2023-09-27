@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "portfolio1.0",
-        "desc": "This is my current portfolio website that I developed using React. I hosted the web app on netlify. The v2.0 is under work with a blog section powered by FastAPI backend.",
+        "desc": "This is my current portfolio website that I developed using React. The v2.0 is under work with a blog section powered by FastAPI backend. This version will be dockerized and will run on a dedicated AWS server.",
         "tech": [
             "react",
             "git",
@@ -25,7 +25,7 @@
         ],
         "img": "images/xtrack.png",
         "github": "https://github.com/mjhossain/xtrack",
-        "demo": ""
+        "demo": "https://xtrack.mointech.dev"
     },
     {
         "id": 3,
