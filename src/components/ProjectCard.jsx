@@ -10,8 +10,8 @@ export default function ProjectCard(props) {
             <img src={props.img} alt="" />
             <div className="info">
                 <div className="btns">
-                    { props.github != "" ? <a href={props.github} >Github</a> : "" }
-                    { props.demo != "" ? <a href={props.demo} >Demo</a> : "" }
+                    { props.github != "" ? <a href={props.github} target='_blank' >Github</a> : "" }
+                    { props.demo != "" ? <a href={props.demo} target='_blank' >Demo</a> : "" }
                 </div>
                 <h3>{props.name}</h3>
                 <p>{props.desc}</p>

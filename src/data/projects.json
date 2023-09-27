@@ -6,9 +6,7 @@
         "tech": [
             "react",
             "git",
-            "docker",
-            "ci/cd",
-            "netlify"
+            "ci/cd"
         ],
         "img": "images/portfolio.png",
         "github": "",
