@@ -1,6 +1,5 @@
 import React from 'react'
 import TechStack from "./TechStack"
-import { Button } from 'reactstrap'
 
 export default function ProjectCard(props) {
     const tech_stack = props.tech.map(tech => {

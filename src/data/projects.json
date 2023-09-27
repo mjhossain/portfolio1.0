@@ -2,15 +2,15 @@
     {
         "id": 1,
         "name": "portfolio1.0",
-        "desc": "This is my current portfolio website that I developed using React. I used a CI/CD pipeline using GitHub Actions to dockerize my application and deploy it in my own server hosted in linode.",
+        "desc": "This is my current portfolio website that I developed using React. I hosted the web app on netlify. The v2.0 is under work with a blog section powered by FastAPI backend.",
         "tech": [
             "react",
             "git",
             "docker",
             "ci/cd",
-            "linode"
+            "netlify"
         ],
-        "img": "../src/assets/portfolio.png",
+        "img": "images/portfolio.png",
         "github": "",
         "demo": ""
     },
@@ -23,7 +23,7 @@
             "mysql",
             "apache"
         ],
-        "img": "../src/assets/xtrack.png",
+        "img": "images/xtrack.png",
         "github": "https://github.com/mjhossain/xtrack",
         "demo": "https://xtrack.mointech.dev"
     },
@@ -37,7 +37,7 @@
             "json",
             "cli"
         ],
-        "img": "../src/assets/term-app.png",
+        "img": "images/term-app.png",
         "github": "https://github.com/mjhossain/note-app-python",
         "demo": ""
     }
