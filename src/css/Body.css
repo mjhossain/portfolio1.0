@@ -90,3 +90,12 @@
     transform: scale(1.2);
     transition: all 0.6s ease;
 }
+
+
+.footer {
+    width: 100vw;
+    height: 70px;
+    background-color: #111112;
+    border-top: 5px solid var(--primary);
+    color: white;
+}
