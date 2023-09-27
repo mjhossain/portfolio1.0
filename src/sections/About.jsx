@@ -1,6 +1,6 @@
 import '../css/Body.css';
 import CoderSVG from "../assets/coder-3.svg"
-import { AiFillGithub, AiFillLinkedin, AiOutlineCloudDownload } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin, AiOutlineCloudDownload, AiOutlineMail } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri';
 
 export default function About() {
@@ -15,6 +15,7 @@ export default function About() {
                     <a className="link-btn" href="https://github.com/mjhossain" target="_blank"><AiFillGithub />Github</a> 
                     <a className="link-btn" href="https://www.linkedin.com/in/mohammedjhossain/" target="_blank"><AiFillLinkedin />LinkedIn</a>
                     <a className="link-btn" href="https://twitter.com/mothinks247" target="_blank"><RiTwitterXFill />Twitter</a>
+                    <a className="link-btn" href="mailto:mjhossain97@protonmail.com" target="_blank"><AiOutlineMail />Email</a>
                 </div>
                 </div>
                 <img src={CoderSVG} alt="Coder SVG" />

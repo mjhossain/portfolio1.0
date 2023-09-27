@@ -70,15 +70,16 @@
 }
 
 .link-btn {
-    height: 40px;
-    width: 180px;
+    height: auto;
+    width: 100px;
     border-radius: 10px;
     background-color: var(--primary);
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-right: 1.4em;
+    padding: 5px;
     font-size: 0.8em;
     color: #111112;
     -webkit-box-shadow: 7px 6px 21px -9px rgba(97, 206, 111, 1);
