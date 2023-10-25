@@ -5,6 +5,15 @@
     .abt-img {
         visibility: collapse;
     }
+
+    .about {
+        justify-content: center;
+        padding-left: 0 !important;
+    }
+
+    .intro-text {
+        max-width: 80% !important;
+    }
 }
 
 .body {
@@ -22,9 +31,10 @@
     height: 100%;
     width: 100%;
     padding-top: 120px;
+    padding-left: 25%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 40px;
     margin-top: 3%;
@@ -57,12 +67,13 @@
 
 
 .abt-img {
-    height: 350px;
-    width: auto;
-    position: relative;
+    height: auto;
+    width: 28%;
+    position: absolute;
     display: flex;
     flex-shrink: 1;
-    /* margin-left: 10%; */
+    top: 22%;
+    right: 15%;
 }
 
 
