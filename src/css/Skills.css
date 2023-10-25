@@ -1,7 +1,10 @@
 @import '../index.css';
 
+
+
+
 .skills {
-    height: 500px;
+    min-height: 500px;
     width: 100vw;
     background-color: var(--primary);
     overflow-y: hidden;
@@ -15,7 +18,7 @@
 }
 
 .skills-content {
-    width: 50%;
+    min-width: 100%;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -24,23 +27,27 @@
     color: white;
 }
 
+.skills-content>h1 {
+    margin-bottom: 2em;
+}
+
 .skills-content>p {
     margin: 100px 0 100px 0;
 }
 
 .skills-showcase {
     height: 100%;
-    width: 80vw;
+    width: 100vw;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 25px;
 }
 
 .box {
-    width: auto;
-    height: 200px;
+    max-width: 300px;
+    min-height: 200px;
     background-color: #111112;
     display: flex;
     flex-flow: column nowrap;
