@@ -18,7 +18,7 @@ export default function About() {
                     <a className="link-btn" href="mailto:mjhossain97@protonmail.com" target="_blank"><AiOutlineMail />Email</a>
                 </div>
                 </div>
-                <img src={CoderSVG} alt="Coder SVG" />
+                <img src={CoderSVG} alt="Coder SVG" className='abt-img' />
             </div>
     )
 }

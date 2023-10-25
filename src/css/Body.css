@@ -1,6 +1,12 @@
 @import '../index.css';
 @import '../css/main.css';
 
+@media (width < 1000px) {
+    .abt-img {
+        visibility: collapse;
+    }
+}
+
 .body {
     height: 100%;
     width: 100%;
@@ -28,7 +34,7 @@
 
 .intro-text {
     color: #e7e7e7;
-    width: 45%;
+    max-width: 45%;
     margin-top: -2em;
     line-height: 1.2em;
     /* padding: 20px; */
@@ -43,17 +49,19 @@
 .hi::after {
     content: '';
     display: block;
-    width: 310px;
+    max-width: 310px;
     height: 8px;
     background-color: rgb(205, 44, 44);
     margin: -5px 0 0 4px;
 }
 
 
-.about>img {
+.abt-img {
     height: 350px;
     width: auto;
     position: relative;
+    display: flex;
+    flex-shrink: 1;
     /* margin-left: 10%; */
 }
 
@@ -62,11 +70,13 @@
 
 .social-btns {
     height: 100%;
-    width: 70%;
+    max-width: 100%;
     display: flex;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
     margin-top: 60px;
+    row-gap: 10px;
 }
 
 .link-btn {
