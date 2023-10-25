@@ -2,7 +2,7 @@
 
 @media (width < 500px) {
     .header {
-        justify-content: center;
+        justify-content: center !important;
         flex-flow: column nowrap !important;
     }
 
