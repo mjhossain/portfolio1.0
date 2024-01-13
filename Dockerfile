@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM node:18-alpine
 WORKDIR /docker-image/
 COPY public/ /docker-image/public
 COPY src/ /docker-image/src
