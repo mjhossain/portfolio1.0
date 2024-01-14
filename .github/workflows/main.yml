@@ -34,5 +34,5 @@ jobs:
         key: ${{ secrets.WEBSERVER_SSH_KEY }}
         script: |
           docker pull mjhos/portfolio
-          docker stop web-container || true
-          docker run -d --name portfolio -p 8001:80 mjhos/portfolio
+          docker stop portfolio-container || true
+          docker run -d --name portfolio-container -p 8001:80 mjhos/portfolio
