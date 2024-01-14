@@ -1,5 +1,5 @@
 # Use an official Node.js image as the build environment
-FROM node:14 as build
+FROM node:latest as build
 # Set the working directory
 WORKDIR /app
 # Copy package.json and package-lock.json to the working directory
@@ -14,7 +14,7 @@ RUN npm run build
 # Stage 2
 
 # Use an official Nginx image as the production environment
-FROM nginx:alpine
+FROM nginx:latest
 # Set the working directory in the Nginx container
 WORKDIR /usr/share/nginx/html
 # Copy the built artifacts from the build container to the Nginx container
