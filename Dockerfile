@@ -2,7 +2,7 @@
 FROM node:18-alpine as builder
 WORKDIR /app
 COPY package*.json .
-CMD ["npm", "install", "-g", "npm@10.3.0"]
+RUN npm install
 COPY . .
 CMD ["npm", "run", "build"]
 
