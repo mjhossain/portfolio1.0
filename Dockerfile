@@ -1,7 +1,13 @@
-FROM node:18-alpine
-WORKDIR /docker-image
-COPY public/ /docker-image/public
-COPY src/ /docker-image/src
-COPY package*.json /docker-image
+FROM node:18-alpine as builder
+WORKDIR /app
+COPY package*.json .
 RUN npm install
-CMD ["npm", "start"]
+COPY . .
+CMD ["npm", "run", "build"]
+
+#Stage 2
+FROM nginx:latest
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
+COPY --from=builder /app/dist .
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
