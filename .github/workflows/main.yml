@@ -36,4 +36,4 @@ jobs:
         script: |
           docker pull mjhos/portfolio
           docker stop portfolio-container || true
-          docker run --platform linux/amd64 -d --name portfolio-container -p 8001:80 mjhos/portfolio
+          docker run -d --name portfolio-container -p 8001:80 mjhos/portfolio
