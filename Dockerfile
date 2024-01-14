@@ -16,6 +16,8 @@ COPY . .
 # Build the Vite project
 RUN npm run build
 
+# Stage 2
+
 # Use an official Nginx image as the production environment
 FROM nginx:alpine
 
