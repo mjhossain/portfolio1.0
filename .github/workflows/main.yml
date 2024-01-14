@@ -1,4 +1,4 @@
-name: Deploy React App
+name: Deploy and Dockerize React App 
 
 on:
   push:
