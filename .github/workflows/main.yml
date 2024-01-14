@@ -43,7 +43,7 @@ jobs:
       run: |
         docker buildx create --use
         docker buildx inspect
-        docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKERHUB_REPO }}:latest .
+        docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKERHUB_REPO }}:latest --push . 
         docker push ${{ secrets.DOCKERHUB_REPO }}:latest
 
     - name: List Docker Images
