@@ -29,9 +29,8 @@ jobs:
     - name: SSH and Deploy
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.WEBSERVER_HOST}}
+        host: ${{ secrets.WEBSERVER_HOST }}
         username: ${{ secrets.WEBSERVER_USERNAME }}
-        # key: ${{ secrets.WEBSERVER_SSH_KEY }}
         password: ${{ secrets.WEBSERVER_PASS }}
         port: ${{ secrets.WEBSERVER_PORT }}
         script: |
