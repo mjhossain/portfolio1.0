@@ -1,2 +1,3 @@
 # TODOs
 
+- [ ] Fix Docker issues
