@@ -31,7 +31,8 @@ jobs:
       with:
         host: ${{ secrets.WEBSERVER_HOST}}
         username: ${{ secrets.WEBSERVER_USERNAME }}
-        key: ${{ secrets.WEBSERVER_SSH_KEY }}
+        # key: ${{ secrets.WEBSERVER_SSH_KEY }}
+        password: ${{ secrets.WEBSERVER_PASS }}
         port: ${{ secrets.WEBSERVER_PORT }}
         script: |
           docker pull mjhos/portfolio
