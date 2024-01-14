@@ -14,7 +14,7 @@ jobs:
 
     - name: Build React App and Docker Image
       run: |
-        docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio .
+        docker build --platform linux/arm64/v8 -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio .
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v1
