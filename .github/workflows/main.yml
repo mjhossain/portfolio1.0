@@ -32,6 +32,7 @@ jobs:
         host: ${{ secrets.WEBSERVER_HOST}}
         username: ${{ secrets.WEBSERVER_USERNAME }}
         key: ${{ secrets.WEBSERVER_SSH_KEY }}
+        port: ${{ secrets.WEBSERVER_PORT }}
         script: |
           docker pull mjhos/portfolio
           docker stop portfolio-container || true
