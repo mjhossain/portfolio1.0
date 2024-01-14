@@ -1,7 +1,8 @@
+#Stage 1
 FROM node:18-alpine as builder
 WORKDIR /app
 COPY package*.json .
-RUN npm install
+CMD ["npm", "install", "-g", "npm@10.3.0"]
 COPY . .
 CMD ["npm", "run", "build"]
 
