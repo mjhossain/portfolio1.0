@@ -1,4 +1,5 @@
-name: SSH and Deploy Docker v1
+# author: mjhossain
+name: SSH and Deploy Docker 
 
 on:
   push:
