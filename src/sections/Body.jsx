@@ -5,6 +5,7 @@ import About from './About';
 import Skills from "./Skills";
 import Projects from "./Projects"
 import Footer from '../components/Footer';
+import MediumArticles from '../components/MediumArticles';
 
 export default function Body() {
     return(
@@ -14,6 +15,8 @@ export default function Body() {
             <Skills />
             <div className="spacer layer2"></div>
             <Projects />
+            <div className="spacer layer3"></div>
+            <MediumArticles />
             <Footer />
         </div>
     )
