@@ -26,7 +26,7 @@ const MediumArticles = () => {
 
 
     return (
-        <div className='articleSection'>
+        <div className='articleSection' id='blog'>
             <h1>Blog // Writeups</h1>
             <div className="articleBox">
                 {articles.map((article, index) => {

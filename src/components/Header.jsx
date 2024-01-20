@@ -1,7 +1,7 @@
 import '../css/Header.css'
 
 export default function Header() {
-    return(
+    return (
         <div className="header">
             <div className="title">
                 <p><span className="mo">Mo</span>InTech</p>
@@ -11,10 +11,11 @@ export default function Header() {
                     <li><a href="MohammedJHossain.pdf" target='_blank'>Resume</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
             </div>
-            
-            
+
+
         </div>
     )
 }
