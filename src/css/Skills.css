@@ -28,7 +28,8 @@
 }
 
 .skills-content>h1 {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    color: #111112;
 }
 
 .skills-content>p {
@@ -56,6 +57,7 @@
     padding: 20px;
     border-radius: 10px;
     opacity: 0.8;
+    text-align: center;
     -webkit-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
@@ -63,7 +65,7 @@
 
 .box>h2 {
     margin-bottom: 10%;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     font-weight: 200;
 }
 
@@ -76,4 +78,46 @@
     opacity: 0.8;
     margin-top: -10px;
     margin-left: 6px;
+}
+
+.box-cert {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.certs {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cert {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert img {
+    max-width: 70%;
+}
+
+.cert a {
+    text-align: center;
+    text-decoration: none;
+    color: #111112;
+}
+
+
+.cert>h5 {
+    color: #111112;
 }
