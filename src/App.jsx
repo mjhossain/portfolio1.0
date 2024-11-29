@@ -1,12 +1,19 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router';
 import './App.css'
 import Home from './pages/Home'
+import Shell from './pages/Shell'
 
 function App() {
-
   return (
-   <Home />
-  )
+    <Router>
+      {/* Define the routes */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shell" element={<Shell />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App

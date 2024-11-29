@@ -12,6 +12,7 @@ export default function Header() {
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#blog">Blog</a></li>
+                    <li><a href="/shell">&gt; Shell</a></li>
                 </ul>
             </div>
 
