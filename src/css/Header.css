@@ -44,10 +44,17 @@
     /* justify-items: flex-end; */
 }
 
+
+.shell_nav {
+    color: red !important;
+}
+
 .navbar>a {
     /* text-decoration: none; */
     color: var(--primary) !important;
 }
+
+
 
 .header a:any-link {
     color: var(--primary) !important;
@@ -74,3 +81,4 @@
     font-weight: 600;
     /* margin-right: 1.5em; */
 }
+
