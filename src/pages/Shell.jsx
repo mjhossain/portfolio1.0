@@ -8,10 +8,17 @@ const Shell = () => {
     const commands = {
         whoami: "Mohammed J Hossain",
         help: "Available commands: help, whoismo, learn <interest/technology>, exit, man <command>",
-        whoismo: "Mohammed",
+        whoismo: [
+            "Name: Mohammed", <br />,
+            "DOB: 01/14/1997", <br />,
+            "IP Location: New York, NY", <br />,
+            "Job Title: L1 IT Technician", <br />,
+            "Hobbies: Scripting, Automation, Web Devlopment, Networking, Gaming", <br />,
+
+        ],
         learn: (arg) => {
             if (arg == 'devops') {
-                return "DevOps"
+                return ["DevOps\n Devops", <br />, "Learn"]
             }
         },
         clear: () => "Type 'clear' in the terminal to reset it.",
@@ -41,7 +48,15 @@ const Shell = () => {
                         ""
                     ]}
                     prompt="visitor@mo-brain:~$"
-                    theme="material-dark"
+                    themes={{
+                        "my-custom-theme": {
+                            themeBGColor: "black",
+                            themeToolbarColor: "gray",
+                            themeColor: "#FFFEFC",
+                            themePromptColor: "green"
+                        }
+                    }}
+                    theme="my-custom-theme"
                     showControlBar={true}
                     showControlButtons={true}
                 />
