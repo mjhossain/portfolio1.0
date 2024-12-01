@@ -3,25 +3,50 @@ import React from 'react';
 import { ReactTerminal } from 'react-terminal';
 import '../css/Shell.css'
 
+
 const Shell = () => {
     // Define commands for the terminal
     const commands = {
         whoami: "Mohammed J Hossain",
-        help: "Available commands: help, whoismo, learn <interest/technology>, exit, man <command>",
+        help: "Available commands: help, ls, whoismo, open <file name>, explore <interest/technology>, exit, man <command>",
         whoismo: [
-            "Name: Mohammed", <br />,
+            "Name: Mohammed J Hossain", <br />,
             "DOB: 01/14/1997", <br />,
             "IP Location: New York, NY", <br />,
             "Job Title: L1 IT Technician", <br />,
-            "Hobbies: Scripting, Automation, Web Devlopment, Networking, Gaming", <br />,
-
+            "Job Technical Domains: Networking, InTune Device Management, Automation w/ Powershell, Windows Server Management, Active Directory Management", <br />,
+            "Current Focus in Tech: AWS, Networking, System Design", <br />,
+            "Hobbies Outside of Tech: Gaming, Guitar, Videography", <br />,
         ],
-        learn: (arg) => {
-            if (arg == 'devops') {
-                return ["DevOps\n Devops", <br />, "Learn"]
+        explore: (arg) => {
+            switch (arg) {
+                case 'devops':
+                    return "With an interest in cloud computing and web app development it naturally leads to interest in devops"
+                    break;
+                case 'programming':
+                    return "Programming was the first step of mine in IT"
+                    break;
+                default:
+                    return ["Please enter a correct option, currently you can explore", <br />,
+                        "devops", <br />,
+                        "programming", <br />,
+                        "automation", <br />,
+                        "networking"]
             }
         },
         clear: () => "Type 'clear' in the terminal to reset it.",
+        ls: () => ["resume.pdf", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "github.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "linkedin.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "medium.lnk"],
+        open: (arg) => {
+            if (arg == 'resume.pdf' || arg == 'resume') {
+                window.open("/MohammedJHossain.pdf", "_blank")
+            } else if (arg == 'linkedin.lnk' || arg == 'linkedin') {
+                window.open("https://www.linkedin.com/in/mohammedjhossain/", "_blank")
+            } else if (arg == 'github.lnk' || arg == 'github') {
+                window.open("https://github.com/mjhossain", "_blank")
+            } else if (arg == 'medium.lnk' || arg == 'medium') {
+                window.open("https://medium.com/@mjhossainnyc", "_blank")
+            }
+        },
         exit: () => {
             // Display a message
             console.log("Exiting... Redirecting to the homepage in 2 seconds.");
