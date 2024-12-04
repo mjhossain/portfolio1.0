@@ -4,19 +4,21 @@ import { ReactTerminal } from 'react-terminal';
 import '../css/Shell.css'
 
 
+
 const Shell = () => {
     // Define commands for the terminal
     const commands = {
         whoami: "Mohammed J Hossain",
         help: "Available commands: help, ls, whoismo, open <file name>, explore <interest/technology>, exit, man <command>",
         whoismo: [
-            "Name: Mohammed J Hossain", <br />,
-            "DOB: 01/14/1997", <br />,
-            "IP Location: New York, NY", <br />,
-            "Job Title: L1 IT Technician", <br />,
-            "Job Technical Domains: Networking, InTune Device Management, Automation w/ Powershell, Windows Server Management, Active Directory Management", <br />,
-            "Current Focus in Tech: AWS, Networking, System Design", <br />,
-            "Hobbies Outside of Tech: Gaming, Guitar, Videography", <br />,
+            <span className='highlight'>Name: </span>, "Mohammed J Hossain", <br />,
+            <span className='highlight'>DOB: </span>, "01/14/1997", <br />,
+            <span className='highlight'>IP Location: </span>, "New York, NY", <br />,
+            <span className='highlight'>Job Title: </span>, "L1 IT Technician", <br />,
+            <span className='highlight'>Job Technical Domains: </span>, "Networking, InTune Device Management, Automation w/ Powershell, Windows Server Management, Active Directory Management", <br />,
+            <span className='highlight'>Certifications: </span>, "ISC2 Certified in Cybersecurity, Google Cybersecurity Professional", <br />,
+            <span className='highlight'>Current Focus in Tech: </span>, "AWS, Networking, System Design", <br />,
+            <span className='highlight'>Hobbies Outside of Tech: </span>, "Gaming, Guitar, Videography", <br />,
         ],
         explore: (arg) => {
             switch (arg) {
@@ -45,6 +47,16 @@ const Shell = () => {
                 window.open("https://github.com/mjhossain", "_blank")
             } else if (arg == 'medium.lnk' || arg == 'medium') {
                 window.open("https://medium.com/@mjhossainnyc", "_blank")
+            }
+        },
+        show: (arg) => {
+            if (arg == 'skills') {
+                return [
+                    <span className='highlight'>Programming: </span>, "Python | Powershell | Bash | JavaScript", <br />,
+                    <span className='highlight'>DevOps: </span>, "Linux | Microsoft Azure | AWS | Docker | Terraform | Git | Github Actions | Jenkins", <br />,
+                    <span className='highlight'>Networking: </span>, "Firewall Management | Unifi Management | Cloud Networking | VPN Management", <br />,
+                    <span className='highlight'>Security: </span>, "Wireshark Packet Analysis | SIEM Dashboards | LOG Analysis"
+                ]
             }
         },
         exit: () => {

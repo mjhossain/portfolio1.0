@@ -2,11 +2,12 @@
     {
         "id": 1,
         "name": "portfolio1.0",
-        "desc": "This is my current portfolio website that I developed using React. The v2.0 is under work with a blog section powered by FastAPI backend. This version will be dockerized and will run on a dedicated AWS server.",
+        "desc": "My portfolio website, hosted on a self-managed Raspberry Pi server, leverages Docker and DevOps practices for automated deployment upon updates. Built with React, the site features an engaging shell-inspired design for a unique user experience.",
         "tech": [
             "react",
             "git",
-            "ci/cd"
+            "ci/cd",
+            "docker"
         ],
         "img": "images/portfolio.png",
         "github": "",

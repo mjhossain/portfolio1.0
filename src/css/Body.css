@@ -30,7 +30,7 @@
 .about {
     height: 100%;
     width: 100%;
-    padding-top: 120px;
+    padding-top: 100px;
     padding-left: 25%;
     display: flex;
     flex-flow: row wrap;
@@ -92,7 +92,7 @@
 
 .link-btn {
     height: auto;
-    width: 100px;
+    width: 17%;
     border-radius: 10px;
     background-color: var(--primary);
     display: flex;
@@ -113,6 +113,28 @@
     transition: all 0.6s ease;
 }
 
+.shell-btn {
+    height: auto;
+    width: 84%;
+    border-radius: 10px;
+    background-color: #6B62FF;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.4em;
+    padding: 5px;
+    font-size: 1em;
+    color: #111112;
+    -webkit-box-shadow: 7px 6px 21px -9px rgba(97, 206, 111, 1);
+    -moz-box-shadow: 7px 6px 21px -9px rgba(97, 206, 111, 1);
+    box-shadow: 7px 6px 21px -9px rgba(97, 206, 111, 1);
+}
+
+.shell-btn:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
 
 .footer {
     width: 100vw;

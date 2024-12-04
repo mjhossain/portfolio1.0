@@ -12,16 +12,16 @@ export default function Skills() {
                 <h1>Skills // Tools // Certs</h1>
                 <div className="skills-showcase">
                     <div className="box">
-                        <h2>Development</h2>
-                        <p>Java, Python, JavaScript, Dart, PHP, SQL, MongoDB, React, FastAPI, NodeJS, Flutter, Firebase</p>
+                        <h2>Programming</h2>
+                        <p>Python | Powershell | Bash | Javascript | SQL</p>
                     </div>
                     <div className="box">
-                        <h2>Operations</h2>
-                        <p>Cloud Computing, Docker, Virtualization, Networking, CI/CD, Git, Automation, Linux Shell Scripting</p>
+                        <h2>DevOps</h2>
+                        <p>CI/CD | AWS | Azure | Docker | Power Automate | Github Actions | Terraform | Ansible | Jenkins</p>
                     </div>
                     <div className="box">
-                        <h2>Security</h2>
-                        <p>SIEM, LOG Analysis, Packet Analysis, Security Controls, Security Frameworks</p>
+                        <h2>Network & Security</h2>
+                        <p>Firewall Management | Cloud Networking | Packet Analysis | LOG Analysis | VPN Management</p>
                     </div>
                     <div className="box-cert">
                         {/* <h2>Certifications</h2> */}

@@ -53,3 +53,8 @@ a {
 .redText {
     color: red;
 }
+
+.highlight {
+    color: #C50F1F;
+    font-weight: bold;
+}
