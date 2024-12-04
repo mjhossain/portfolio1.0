@@ -9,7 +9,7 @@ const Shell = () => {
     // Define commands for the terminal
     const commands = {
         whoami: "Mohammed J Hossain",
-        help: "Available commands: help, ls, whoismo, open <file name>, explore <interest/technology>, exit, man <command>",
+        help: "Available commands: help, ls, whoismo, cat <file name>, explore <interest/technology>, exit, man <command>",
         whoismo: [
             <span className='highlight'>Name: </span>, "Mohammed J Hossain", <br />,
             <span className='highlight'>DOB: </span>, "01/14/1997", <br />,
@@ -38,7 +38,7 @@ const Shell = () => {
         },
         clear: () => "Type 'clear' in the terminal to reset it.",
         ls: () => ["resume.pdf", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "github.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "linkedin.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "medium.lnk"],
-        open: (arg) => {
+        cat: (arg) => {
             if (arg == 'resume.pdf' || arg == 'resume') {
                 window.open("/MohammedJHossain.pdf", "_blank")
             } else if (arg == 'linkedin.lnk' || arg == 'linkedin') {
@@ -67,7 +67,8 @@ const Shell = () => {
                 window.location.href = "/"; // Replace '/' with your homepage route
             }, 2000); // 2000 milliseconds = 2 seconds
             return "Exiting in 2 seconds...Good bye! Hope you learned something new about me!";
-        }
+        },
+        sudo: () => "Permission granted to explore my shell-world!"
     };
 
     return (
@@ -79,7 +80,7 @@ const Shell = () => {
                     welcomeMessage={[
                         "Welcome to Mo's Shell\n",
                         <br />, <br />,
-                        "Enter 'help' to learn about the available commands",
+                        "Enter 'help' to learn about the available commands, more commands are added with every new update!",
                         <br />, <br />,
                         "",
                         ""
