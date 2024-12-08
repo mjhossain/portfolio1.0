@@ -1,91 +1,115 @@
-// Shell.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { ReactTerminal } from 'react-terminal';
-import '../css/Shell.css'
-
-
+import '../css/Shell.css';
+import ProjectsData from '../data/projects.json'
 
 const Shell = () => {
-    // Define commands for the terminal
+    const [currentDirectory, setCurrentDirectory] = useState('~');
+
+    const projects = {
+        'project1': {
+            title: 'E-Commerce Platform',
+            description: 'A full-stack web application built with MERN stack',
+            tech: ['React', 'Node.js', 'MongoDB', 'Express'],
+            link: 'https://google.com',
+            viewType: 'Github'
+        },
+        'project2': {
+            title: 'Cloud Infrastructure Monitor',
+            description: 'AWS monitoring dashboard with real-time metrics',
+            tech: ['AWS', 'React', 'Node.js', 'CloudWatch'],
+            link: 'https://google.com',
+            viewType: 'Web Page'
+        },
+        'project3': {
+            title: 'Automated Deployment Pipeline',
+            description: 'CI/CD pipeline using GitHub Actions and Docker',
+            tech: ['GitHub Actions', 'Docker', 'Jenkins', 'Terraform'],
+            link: 'https://google.com',
+            viewType: 'Github'
+        }
+    };
+
+    const getPrompt = () => {
+        return `visitor@mo-brain:${currentDirectory}$`;
+    };
+
     const commands = {
         whoami: "Mohammed J Hossain",
-        help: "Available commands: help, ls, whoismo, cat <file name>, explore <interest/technology>, exit, man <command>",
-        whoismo: [
-            <span className='highlight'>Name: </span>, "Mohammed J Hossain", <br />,
-            <span className='highlight'>DOB: </span>, "01/14/1997", <br />,
-            <span className='highlight'>IP Location: </span>, "New York, NY", <br />,
-            <span className='highlight'>Job Title: </span>, "L1 IT Technician", <br />,
-            <span className='highlight'>Job Technical Domains: </span>, "Networking, InTune Device Management, Automation w/ Powershell, Windows Server Management, Active Directory Management", <br />,
-            <span className='highlight'>Certifications: </span>, "ISC2 Certified in Cybersecurity, Google Cybersecurity Professional", <br />,
-            <span className='highlight'>Current Focus in Tech: </span>, "AWS, Networking, System Design", <br />,
-            <span className='highlight'>Hobbies Outside of Tech: </span>, "Gaming, Guitar, Videography", <br />,
-        ],
-        explore: (arg) => {
-            switch (arg) {
-                case 'devops':
-                    return "With an interest in cloud computing and web app development it naturally leads to interest in devops"
-                    break;
-                case 'programming':
-                    return "Programming was the first step of mine in IT"
-                    break;
-                default:
-                    return ["Please enter a correct option, currently you can explore", <br />,
-                        "devops", <br />,
-                        "programming", <br />,
-                        "automation", <br />,
-                        "networking"]
+        cd: (dir) => {
+            if (dir === '..') {
+                if (currentDirectory !== '~') {
+                    setCurrentDirectory('~');
+                    return 'Directory changed to: ~';
+                }
+                return 'Already in home directory';
+            } else if (dir === 'projects') {
+                setCurrentDirectory('~/projects');
+                return 'Directory changed to: ~/projects';
+            } else {
+                return 'Directory not found. Available directories: projects';
             }
         },
-        clear: () => "Type 'clear' in the terminal to reset it.",
-        ls: () => ["resume.pdf", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "github.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "linkedin.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "medium.lnk"],
-        cat: (arg) => {
-            if (arg == 'resume.pdf' || arg == 'resume') {
-                window.open("/MohammedJHossain.pdf", "_blank")
-            } else if (arg == 'linkedin.lnk' || arg == 'linkedin') {
-                window.open("https://www.linkedin.com/in/mohammedjhossain/", "_blank")
-            } else if (arg == 'github.lnk' || arg == 'github') {
-                window.open("https://github.com/mjhossain", "_blank")
-            } else if (arg == 'medium.lnk' || arg == 'medium') {
-                window.open("https://medium.com/@mjhossainnyc", "_blank")
-            }
+        pwd: () => {
+            return `Current directory: ${currentDirectory}`;
         },
-        show: (arg) => {
-            if (arg == 'skills') {
+        ls: () => {
+            if (currentDirectory === '~/projects') {
                 return [
-                    <span className='highlight'>Programming: </span>, "Python | Powershell | Bash | JavaScript", <br />,
-                    <span className='highlight'>DevOps: </span>, "Linux | Microsoft Azure | AWS | Docker | Terraform | Git | Github Actions | Jenkins", <br />,
-                    <span className='highlight'>Networking: </span>, "Firewall Management | Unifi Management | Cloud Networking | VPN Management", <br />,
-                    <span className='highlight'>Security: </span>, "Wireshark Packet Analysis | SIEM Dashboards | LOG Analysis"
-                ]
+                    "Available projects:", <br />,
+                    ...Object.keys(projects).map(key =>
+                        [<span className="highlight">{projects[key].title}</span>, <br />]
+                    ).flat(),
+                    <br />,
+                    "Use 'project-info <project-number>' for more details"
+                ];
             }
+            return ["resume.pdf", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "github.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "linkedin.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "medium.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "projects/"];
         },
-        exit: () => {
-            // Display a message
-            console.log("Exiting... Redirecting to the homepage in 2 seconds.");
-            // Wait 2 seconds before redirecting
-            setTimeout(() => {
-                window.location.href = "/"; // Replace '/' with your homepage route
-            }, 2000); // 2000 milliseconds = 2 seconds
-            return "Exiting in 2 seconds...Good bye! Hope you learned something new about me!";
+        'project-info': (num) => {
+            const projectKey = `project${num}`;
+            if (currentDirectory !== '~/projects') {
+                return 'Please cd into the projects directory first';
+            }
+            if (projects[projectKey]) {
+                const project = projects[projectKey];
+                return [
+                    <span className="highlight">Title: </span>, project.title, <br />,
+                    <span className="highlight">Description: </span>, project.description, <br />,
+                    <span className="highlight">Technologies: </span>, project.tech.join(', '), <br />,
+                    <span className="highlight">View Project: </span>, <a href={project.link} target='_blank'>Visit {project.viewType}</a>, <br />,
+                ];
+            }
+            return 'Project not found. Available projects: 1, 2, 3';
         },
-        sudo: () => "Permission granted to explore my shell-world!"
+        // ... your existing commands ...
+        help: () => [
+            "Available commands:", <br />,
+            "cd <directory> - Change directory (projects or ..)", <br />,
+            "pwd - Print working directory", <br />,
+            "ls - List directory contents", <br />,
+            "project-info <number> - View project details", <br />,
+            // ... your existing help text ...
+            "Type 'ls' to see available files and directories"
+        ],
+        // ... rest of your existing commands ...
     };
 
     return (
         <div className='terminal_box'>
             <div className='terminal'>
-                {/* <h1 style={{ color: "white" }}>Mo's Brain</h1> */}
                 <ReactTerminal
                     commands={commands}
                     welcomeMessage={[
                         "Welcome to Mo's Shell\n",
                         <br />, <br />,
-                        "Enter 'help' to learn about the available commands, more commands are added with every new update!",
+                        "Enter 'help' to learn about the available commands",
                         <br />, <br />,
-                        "",
+                        "Try 'cd projects' to explore my portfolio",
+                        <br />,
                         ""
                     ]}
-                    prompt="visitor@mo-brain:~$"
+                    prompt={getPrompt()}
                     themes={{
                         "my-custom-theme": {
                             themeBGColor: "black",
