@@ -107,7 +107,16 @@ const Shell = () => {
             "describe - for a little paragraph describing me", <br />,
             "clear - to clear the terminal", <br />,
             "exit - to open the GUI website", <br />, <br />,
-            "Psst... There are some hidden commands too! Try to find them 🕵️‍♂️.. maybe try rickroll to begin with."
+            "Psst... There are some hidden commands too! Try to find them 🕵️‍♂️.. maybe try rickroll to begin with.", <br />, <br />, <br />,
+            "+----------------------------------------------------------------------+", <br />, <br />, <br />,
+            "Usage:", <br />, <br />,
+            "To open any file or link use 'cat <file-name>':", <br />,
+            "Example: cat skills.md or cat skills", <br />, <br />,
+            "To check out projects: use 'cd projects'", <br />,
+            "Once inside projects folder use 'open <project-id>' to checkout a project", <br />, <br />,
+            "To clear the screen at any point just type 'clear'", <br />, <br />,
+            "To get back to the GUI website type 'exit'", <br />, <br />,
+
         ],
         exit: () => {
             // Display a message
