@@ -1,29 +1,25 @@
-# Stage 1: Build Stage
-# Use a specific LTS Node.js version (e.g., 20-alpine or the latest supported version for React)
+# Use an official Node.js image as the build environment
 FROM node:18-alpine as build
-
-# Set working directory
+# Set the working directory
 WORKDIR /app
-
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
-
-# Install dependencies exactly as defined in package-lock.json
+# Install dependencies
 RUN npm install
 
-# Copy the rest of the project files
+# Copy the entire project to the working directory
 COPY . .
-
 # Build the Vite project
 RUN npm run build
 
-# Stage 2: Production Stage
+# Stage 2
+
+# Use an official Nginx image as the production environment
 FROM nginx:latest
-
-# Copy build output from Stage 1 to Nginx
+# Set the working directory in the Nginx container
 WORKDIR /usr/share/nginx/html
+# Copy the built artifacts from the build container to the Nginx container
 COPY --from=build /app/dist .
-
 # Expose port 80
 EXPOSE 80
 
