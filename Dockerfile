@@ -1,5 +1,5 @@
 # Use an official Node.js image as the build environment
-FROM node:18-alpine as build
+FROM node:22-alpine as build
 # Set the working directory
 WORKDIR /app
 # Copy package.json and package-lock.json to the working directory
