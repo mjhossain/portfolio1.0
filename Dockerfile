@@ -6,6 +6,10 @@ WORKDIR /app
 COPY package*.json ./
 # Install dependencies
 RUN npm install
+# Update dependencies
+RUN npm update
+# Fix vulnerabilities, if possible
+RUN npm audit fix --force
 # Copy the entire project to the working directory
 COPY . .
 # Build the Vite project
