@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { TerminalContextProvider } from "react-terminal";
 import './App.css'
 import Home from './pages/Home'

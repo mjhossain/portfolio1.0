@@ -1,6 +1,6 @@
 # Stage 1: Build Stage
 # Use a specific LTS Node.js version (e.g., 20-alpine or the latest supported version for React)
-FROM node:20-alpine as build
+FROM node:18-alpine as build
 
 # Set working directory
 WORKDIR /app
@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies exactly as defined in package-lock.json
-RUN npm install --legacy-peer-deps
+RUN npm install
 
 # Copy the rest of the project files
 COPY . .
