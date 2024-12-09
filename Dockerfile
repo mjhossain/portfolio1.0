@@ -20,6 +20,10 @@ FROM nginx:latest
 WORKDIR /usr/share/nginx/html
 # Copy the built artifacts from the build container to the Nginx container
 COPY --from=build /app/dist .
+
+# Copy custom Nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Expose port 80
 EXPOSE 80
 
