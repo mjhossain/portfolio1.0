@@ -58,3 +58,11 @@ a {
     color: #C50F1F;
     font-weight: bold;
 }
+
+.dir {
+    color: #48CFCB;
+}
+
+.file {
+    color: #7E1891;
+}

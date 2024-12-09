@@ -20,22 +20,14 @@ const Shell = () => {
             <span className='highlight'>Current Focus in Tech: </span>, "AWS, Networking, System Design", <br />,
             <span className='highlight'>Hobbies Outside of Tech: </span>, "Gaming, Guitar, Videography", <br />,
         ],
-        explore: (arg) => {
-            switch (arg) {
-                case 'devops':
-                    return "With an interest in cloud computing and web app development it naturally leads to interest in devops"
-                    break;
-                case 'programming':
-                    return "Programming was the first step of mine in IT"
-                    break;
-                default:
-                    return ["Please enter a correct option, currently you can explore", <br />,
-                        "devops", <br />,
-                        "programming", <br />,
-                        "automation", <br />,
-                        "networking"]
-            }
-        },
+        describe: () => {
+            return ([
+                "As an IT Technician at DigaCore, I specialize in delivering comprehensive support for Networking, Windows Server, Active Directory, and Microsoft 365. My role includes optimizing network performance with SonicWall firewalls and VPNs, automating workflows using Azure, PowerShell, and Power Automate, and streamlining deployment processes through DevOps practices.",
+                <br />, <br />,
+                "Driven by a passion for cloud computing and automation, I am actively pursuing AWS Solutions Architect certification to transition into roles such as Cloud Engineer or Junior DevOps Engineer. With a focus on innovation, I aim to build secure, scalable, and efficient solutions that bridge infrastructure management and software development."
+            ])
+        }
+        ,
         clear: () => "Type 'clear' in the terminal to reset it.",
         ls: () => ["resume.pdf", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "github.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "linkedin.lnk", <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, "medium.lnk"],
         cat: (arg) => {

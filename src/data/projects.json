@@ -5,7 +5,6 @@
         "desc": "My portfolio website, hosted on a self-managed Raspberry Pi server, leverages Docker and DevOps practices for automated deployment upon updates. Built with React, the site features an engaging shell-inspired design for a unique user experience.",
         "tech": [
             "react",
-            "git",
             "ci/cd",
             "docker"
         ],
@@ -26,10 +25,26 @@
         "img": "images/xtrack.png",
         "github": "https://github.com/mjhossain/xtrack",
         "demo": "",
-        "viewType": "Github"
+        "viewType": "Github Repo",
+        "link": "https://github.com/mjhossain/xtrack"
     },
     {
         "id": 3,
+        "name": "NYC Crime Visualizer",
+        "desc": "This project is a comprehensive data analysis and visualization initiative developed as part of a school assignment. The primary objective was to explore and understand crime trends in New York City using publicly available data from the NYC Open Data portal.",
+        "img": "images/crime-visual.png",
+        "tech": [
+            "python",
+            "open-data",
+            "api"
+        ],
+        "demo": "",
+        "github": "https://github.com/mjhossain/crime-visualization",
+        "viewType": "Github Repo",
+        "link": "https://github.com/mjhossain/crime-visualization"
+    },
+    {
+        "id": 4,
         "name": "terminal-note",
         "desc": "terminal-note is a note taking app I developed in order to take quick notes from a command-line interface using Python. It has 2 variation, the first one uses a json file, and the second one uses a sql database.",
         "tech": [
@@ -41,6 +56,36 @@
         "img": "images/term-app.png",
         "github": "https://github.com/mjhossain/note-app-python",
         "demo": "",
-        "viewType": "Github"
+        "viewType": "Github Repo",
+        "link": "https://github.com/mjhossain/note-app-python"
+    },
+    {
+        "id": 5,
+        "name": "File Copier",
+        "desc": "A school project created that takes a csv file that consits of list of file names and copies them from selected source to destination",
+        "tech": [
+            "java",
+            "javax"
+        ],
+        "img": "images/copier.png",
+        "github": "https://github.com/mjhossain/FileCopier",
+        "demo": "",
+        "viewType": "Github Repo",
+        "link": "https://github.com/mjhossain/FileCopier"
+    },
+    {
+        "id": 6,
+        "name": "Powershell Scripts",
+        "desc": "This project involves the development and deployment of a series of automation scripts tailored for Managed Service Provider (MSP) clients. These automated processes span both Azure cloud environments and on-premises server infrastructures.",
+        "tech": [
+            "powershell",
+            "azure",
+            "microsoft-server"
+        ],
+        "img": "images/powershell.png",
+        "github": "",
+        "demo": "",
+        "viewType": "Presented on Request",
+        "link": ""
     }
 ]
