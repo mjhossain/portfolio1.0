@@ -15,18 +15,18 @@
     },
     {
         "id": 2,
-        "name": "xTrack",
-        "desc": "xTrack is a application that tracks expense created for a school project using PHP & MySQL",
+        "name": "BudgetBuddy",
+        "desc": "BudgetBuddy is a very simple budget tracking application that allows users to track their income and expenses. It is built using React and the backend is a simple google sheet.",
         "tech": [
-            "php",
-            "mysql",
-            "apache"
+            "react",
+            "google apps-script",
+            "tailwind"
         ],
-        "img": "images/xtrack.png",
-        "github": "https://github.com/mjhossain/xtrack",
-        "demo": "",
+        "img": "images/budgetbud.png",
+        "github": "https://github.com/mjhossain/budget-app",
+        "demo": "https://budget.mointech.dev",
         "viewType": "Github Repo",
-        "link": "https://github.com/mjhossain/xtrack"
+        "link": "https://github.com/mjhossain/budget-app"
     },
     {
         "id": 3,
@@ -45,19 +45,18 @@
     },
     {
         "id": 4,
-        "name": "terminal-note",
-        "desc": "terminal-note is a note taking app I developed in order to take quick notes from a command-line interface using Python. It has 2 variation, the first one uses a json file, and the second one uses a sql database.",
+        "name": "xTrack",
+        "desc": "xTrack is a application that tracks expense created for a school project using PHP & MySQL",
         "tech": [
-            "python",
+            "php",
             "mysql",
-            "json",
-            "cli"
+            "apache"
         ],
-        "img": "images/term-app.png",
-        "github": "https://github.com/mjhossain/note-app-python",
+        "img": "images/xtrack.png",
+        "github": "https://github.com/mjhossain/xtrack",
         "demo": "",
         "viewType": "Github Repo",
-        "link": "https://github.com/mjhossain/note-app-python"
+        "link": "https://github.com/mjhossain/xtrack"
     },
     {
         "id": 5,

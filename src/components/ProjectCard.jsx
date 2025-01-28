@@ -11,7 +11,7 @@ export default function ProjectCard(props) {
             <div className="info">
                 <div className="btns">
                     { props.github != "" ? <a href={props.github} target='_blank' >Github</a> : "" }
-                    { props.demo != "" ? <a href={props.demo} target='_blank' >Demo</a> : "" }
+                    { props.demo != "" ? <a href={props.demo} target='_blank' >Visit App</a> : "" }
                 </div>
                 <h3>{props.name}</h3>
                 <p>{props.desc}</p>
