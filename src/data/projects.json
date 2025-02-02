@@ -20,7 +20,10 @@
         "tech": [
             "react",
             "google apps-script",
-            "tailwind"
+            "tailwind",
+            "nginx",
+            "docker",
+            "github-actions"
         ],
         "img": "images/budgetbuddy.png",
         "github": "https://github.com/mjhossain/budget-app",
@@ -30,6 +33,23 @@
     },
     {
         "id": 3,
+        "name": "Films By Zakir",
+        "desc": "Portfolio website for a wedding filmmaker based out of New York City",
+        "tech": [
+            "react",
+            "emailjs",
+            "nginx",
+            "docker",
+            "github-actions"
+        ],
+        "img": "images/filmsbyz.png",
+        "demo": "https://filmsbyzakir.com",
+        "viewType": "Website",
+        "github": "",
+        "link": ""
+    },
+    {
+        "id": 4,
         "name": "NYC Crime Visualizer",
         "desc": "This project is a comprehensive data analysis and visualization initiative developed as part of a school assignment. The primary objective was to explore and understand crime trends in New York City using publicly available data from the NYC Open Data portal.",
         "img": "images/crime-visual.png",
@@ -42,21 +62,6 @@
         "github": "https://github.com/mjhossain/crime-visualization",
         "viewType": "Github Repo",
         "link": "https://github.com/mjhossain/crime-visualization"
-    },
-    {
-        "id": 4,
-        "name": "xTrack",
-        "desc": "xTrack is a application that tracks expense created for a school project using PHP & MySQL",
-        "tech": [
-            "php",
-            "mysql",
-            "apache"
-        ],
-        "img": "images/xtrack.png",
-        "github": "https://github.com/mjhossain/xtrack",
-        "demo": "",
-        "viewType": "Github Repo",
-        "link": "https://github.com/mjhossain/xtrack"
     },
     {
         "id": 5,
