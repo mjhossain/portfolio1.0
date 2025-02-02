@@ -6,11 +6,13 @@
         "tech": [
             "react",
             "ci/cd",
-            "docker"
+            "docker",
+            "nginx",
+            "github-actions"
         ],
         "img": "images/portfolio.png",
-        "github": "",
-        "demo": "",
+        "github": "https://github.com/mjhossain/portfolio1.0",
+        "demo": "Github",
         "viewType": "none"
     },
     {
