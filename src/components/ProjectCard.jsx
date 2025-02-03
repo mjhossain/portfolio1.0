@@ -32,12 +32,13 @@ export default function ProjectCard(props) {
                             &times;
                         </button>
                         <h3>{props.name}</h3>
+                        <p className='overview'>Core Technologies:</p>
                         <div className="tech-stack">
-                            Core Technologies: {tech_stack}
+                            {tech_stack}
                         </div>
                         <p className='overview'>Idea:</p>
                         <p className='pj-desc'>{props.desc}</p>
-                        {props.deployment && <p className='overview'>Deployment:</p>}
+                        {props.deployment && <p className='overview'>Dev & Ops:</p>}
                         {props.deployment && <p className='pj-desc'>{props.deployment}</p>}
                         {props.notableFeatures && <p className='overview'>Notable Features:</p>}
                         {props.notableFeatures && (

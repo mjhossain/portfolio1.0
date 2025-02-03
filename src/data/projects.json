@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "portfolio1.0",
-        "desc": "This website was created to showcase my skills and projects. It was also created with an intention to teach myself React and also creating CI/CD piplines using Github Actions. ",
+        "desc": "This website was created to showcase my skills and projects. It was created with an intention to teach myself React and also creating CI/CD piplines using Github Actions.",
         "summary": "portfolio website hosted on a self-managed Raspberry Pi server",
         "deployment": "The project's versioning is controlled through Github and the site is deployed using Docker and Github Actions. The site is hosted on a self-managed Raspberry Pi server. The intention behind such a setup is to learn  DevOps practices and also to have a quick and easy way to migrate to a new server.",
         "notableFeatures": [
