@@ -31,12 +31,22 @@ export default function ProjectCard(props) {
                         <button className="close-modal" onClick={() => setIsModalOpen(false)}>
                             &times;
                         </button>
-                        <h2>{props.name}</h2>
-                        {/* <img src={props.img} alt={props.name} /> */}
-                        <p>{props.desc}</p>
+                        <h3>{props.name}</h3>
                         <div className="tech-stack">
-                            {tech_stack}
+                            Core Technologies: {tech_stack}
                         </div>
+                        <p className='overview'>Idea:</p>
+                        <p className='pj-desc'>{props.desc}</p>
+                        {props.deployment && <p className='overview'>Deployment:</p>}
+                        {props.deployment && <p className='pj-desc'>{props.deployment}</p>}
+                        {props.notableFeatures && <p className='overview'>Notable Features:</p>}
+                        {props.notableFeatures && (
+                            <ul className='feature-list'>
+                                {props.notableFeatures.map((feature, index) => (
+                                    <li key={index} className='pj-desc'>{feature}</li>
+                                ))}
+                            </ul>
+                        )}
                         <div className="modal-buttons">
                             {props.github && <a href={props.github} target="_blank" rel="noopener noreferrer">GitHub</a>}
                             {props.demo && <a href={props.demo} target="_blank" rel="noopener noreferrer">Live Demo</a>}

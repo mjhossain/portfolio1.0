@@ -93,7 +93,7 @@
 }
 
 .tech {
-    height: 8px;
+    height: 10px;
     width: auto;
     padding: 5px;
     background-color: #111112;
@@ -168,6 +168,29 @@
     overflow-y: auto;
     position: relative;
     color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.pj-desc {
+    font-size: 0.8em;
+}
+
+.overview {
+    align-self: flex-start;
+}
+
+.feature-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.feature-list li {
+    margin-bottom: 5px;
 }
 
 .close-modal {
