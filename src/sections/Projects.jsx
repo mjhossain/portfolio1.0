@@ -15,7 +15,7 @@ export default function Projects() {
 
     return(
         <div className="projects" id="projects" >
-            <img src={CoderBot} className='coder-bot' />
+            {/* <img src={CoderBot} className='coder-bot' /> */}
             <h1>Projects</h1>
             <div className="project-cards">
                {projects}

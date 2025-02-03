@@ -3,6 +3,7 @@
         "id": 1,
         "name": "portfolio1.0",
         "desc": "My portfolio website, hosted on a self-managed Raspberry Pi server, leverages Docker and DevOps practices for automated deployment upon updates. Built with React, the site features an engaging shell-inspired design for a unique user experience.",
+        "summary": "portfolio website hosted on a self-managed Raspberry Pi server",
         "tech": [
             "react",
             "ci/cd",
@@ -12,13 +13,14 @@
         ],
         "img": "images/portfolio.png",
         "github": "https://github.com/mjhossain/portfolio1.0",
-        "demo": "Github",
+        "demo": "",
         "viewType": "none"
     },
     {
         "id": 2,
         "name": "BudgetBuddy",
         "desc": "BudgetBuddy is a very simple budget tracking application that allows users to track their income and expenses. It is built using React and the backend is a simple google sheet.",
+        "summary": "budget tracking application built using React and a google sheet",
         "tech": [
             "react",
             "google apps-script",
@@ -37,6 +39,7 @@
         "id": 3,
         "name": "Films By Zakir",
         "desc": "Portfolio website for a wedding filmmaker based out of New York City",
+        "summary": "Portfolio website for a wedding filmmaker based out of New York City",
         "tech": [
             "react",
             "emailjs",
@@ -54,6 +57,7 @@
         "id": 4,
         "name": "NYC Crime Visualizer",
         "desc": "This project is a comprehensive data analysis and visualization initiative developed as part of a school assignment. The primary objective was to explore and understand crime trends in New York City using publicly available data from the NYC Open Data portal.",
+        "summary": "data analysis and visualization initiative developed as part of a school assignment",
         "img": "images/crime-visual.png",
         "tech": [
             "python",
@@ -69,6 +73,7 @@
         "id": 5,
         "name": "File Copier",
         "desc": "A school project created that takes a csv file that consits of list of file names and copies them from selected source to destination",
+        "summary": "school project created that copies files from a source to a destination based on a csv file",
         "tech": [
             "java",
             "javax"
@@ -83,6 +88,7 @@
         "id": 6,
         "name": "Powershell Scripts",
         "desc": "This project involves the development and deployment of a series of automation scripts tailored for Managed Service Provider (MSP) clients. These automated processes span both Azure cloud environments and on-premises server infrastructures.",
+        "summary": "automation scripts for MSP clients",
         "tech": [
             "powershell",
             "azure",
