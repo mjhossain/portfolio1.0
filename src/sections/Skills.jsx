@@ -7,39 +7,70 @@ import '../css/logos.css'
 export default function Skills() {
     return (
         <div className="skills" id="skills">
-
             <div className="skills-content">
-                <h1>Skills // Tools // Certs</h1>
+                <h1>Skills & Expertise</h1>
                 <div className="skills-showcase">
-                    <div className="box">
-                        <h2>Programming</h2>
-                        <p>Python | Powershell | Bash | Javascript | SQL</p>
-                    </div>
-                    <div className="box">
-                        <h2>DevOps</h2>
-                        <p>CI/CD | AWS | Azure | Docker | Power Automate | Github Actions | Terraform | Ansible | Jenkins</p>
-                    </div>
-                    <div className="box">
-                        <h2>Network & Security</h2>
-                        <p>Firewall Management | Cloud Networking | Packet Analysis | LOG Analysis | VPN Management</p>
-                    </div>
-                    <div className="box-cert">
-                        {/* <h2>Certifications</h2> */}
-                        <div className="certs">
-                            <div className='cert'>
-                                <img src="/images/google-cc-c.png" alt="" />
-                                <a href="https://coursera.org/share/822a8a1177b065ecb0ebca5fb89314e1" target='_blank'>
-                                    Google Cybersecurity Professional
-                                </a>
-                            </div>
-                            <div className='cert'>
-                                <img src="/images/cc-c.png" alt="" />
-                                <a href="https://www.credly.com/badges/a8a930c1-c9df-4852-a6a5-15a45d4743d5/public_url" target='_blank'>
-                                    ISC2 Certified in Cybersecurity
-                                </a>
+                    <div className="skills-grid">
+                        <div className="skill-card">
+                            <h2>Development</h2>
+                            <div className="skill-items">
+                                <span>Python</span>
+                                <span>Powershell</span>
+                                <span>Bash</span>
+                                <span>Javascript</span>
+                                <span>SQL</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Next.js</span>
+                                <span>Flutter</span>
+                                <span>Dart</span>   
+                                <span>Java</span>
                             </div>
                         </div>
-
+                        <div className="skill-card">
+                            <h2>Operations</h2>
+                            <div className="skill-items">
+                                <span>CI/CD</span>
+                                <span>AWS</span>
+                                <span>Power Automate</span>
+                                <span>Docker</span>
+                                <span>Github Actions</span>
+                                <span>Terraform</span>
+                                <span>Ansible</span>
+                                <span>Jenkins</span>
+                                <span>Networking</span>
+                            </div>
+                        </div>
+                        {/* <div className="skill-card">
+                            <h2>Network & Security</h2>
+                            <div className="skill-items">
+                                <span>Firewall Management</span>
+                                <span>Cloud Networking</span>
+                                <span>Packet Analysis</span>
+                                <span>LOG Analysis</span>
+                                <span>VPN Management</span>
+                            </div>
+                        </div> */}
+                    </div>
+                    
+                    <div className="certifications-section">
+                        <h2>Certifications</h2>
+                        <div className="cert-grid">
+                            <a href="https://coursera.org/share/822a8a1177b065ecb0ebca5fb89314e1" target='_blank' rel="noopener noreferrer" className="cert-card">
+                                <img src="/images/google-cc-c.png" alt="Google Cybersecurity" />
+                                <div className="cert-info">
+                                    <h3>Google Cybersecurity Professional</h3>
+                                    <p>View Credential</p>
+                                </div>
+                            </a>
+                            <a href="https://www.credly.com/badges/a8a930c1-c9df-4852-a6a5-15a45d4743d5/public_url" target='_blank' rel="noopener noreferrer" className="cert-card">
+                                <img src="/images/cc-c.png" alt="ISC2 Certified" />
+                                <div className="cert-info">
+                                    <h3>ISC2 Certified in Cybersecurity</h3>
+                                    <p>View Credential</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

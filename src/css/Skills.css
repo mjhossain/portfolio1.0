@@ -2,122 +2,134 @@
 
 
 
-
 .skills {
-    min-height: 500px;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* padding: 60px 40px; */
     background-color: var(--primary);
-    overflow-y: hidden;
-    overflow-x: hidden;
     position: relative;
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
 }
 
 .skills-content {
-    min-width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    position: relative;
+    z-index: 2;
+    padding: 80px 180px;
 }
 
-.skills-content>h1 {
-    margin-bottom: 1em;
-    color: #111112;
-}
-
-.skills-content>p {
-    margin: 100px 0 100px 0;
-}
-
-.skills-showcase {
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
-
-.box {
-    max-width: 300px;
-    min-height: 200px;
-    background-color: #111112;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    opacity: 0.8;
+.skills-content h1 {
     text-align: center;
-    -webkit-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.75);
+    /* font-size: 2.5rem; */
+    margin-bottom: 3rem;
+    color: #111112;
+    font-weight: 600;
 }
 
-.box>h2 {
-    margin-bottom: 10%;
-    /* align-self: flex-start; */
-    font-weight: 200;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
-.box>h2::after {
+.skill-card {
+    background: #f2f2f2;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* .skill-card:hover {
+    transform: translateY(-5px);
+} */
+
+.skill-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #111112;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.skill-card h2::after {
     content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: red;
-    opacity: 0.8;
-    margin-top: -10px;
-    margin-left: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #61ce70;
+    border-radius: 2px;
 }
 
-.box-cert {
-    width: 100%;
-    height: 100%;
+.skill-items {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
 }
 
-.certs {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+.skill-items span {
+    background: #61ce70;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    color: #111112;
+    font-weight: 500;
 }
 
-.cert {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+.certifications-section {
+    margin-top: 3rem;
+    padding: 0 2rem;
 }
 
-.cert img {
-    max-width: 70%;
-}
-
-.cert a {
+.certifications-section h2 {
     text-align: center;
-    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 2rem;
     color: #111112;
 }
 
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-.cert>h5 {
+.cert-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .cert-card:hover {
+    transform: translateY(-3px);
+} */
+
+.cert-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.cert-info h3 {
     color: #111112;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-info p {
+    color: #3b82f6;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
