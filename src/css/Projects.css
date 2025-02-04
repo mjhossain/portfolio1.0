@@ -93,12 +93,12 @@
 }
 
 .tech {
-    height: 10px;
+    height: 100%;
     width: auto;
     padding: 5px;
-    background-color: #111112;
-    color: white;
-    font-size: 0.5em;
+    background-color: #61ce70;
+    color: #111112;
+    font-size: 0.7em;
     /* border-radius: 10%; */
     display: flex;
     flex-flow: row nowrap;

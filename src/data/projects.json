@@ -25,15 +25,22 @@
     {
         "id": 2,
         "name": "BudgetBuddy",
-        "desc": "BudgetBuddy is a very simple budget tracking application that allows users to track their income and expenses. It is built using React and the backend is a simple google sheet.",
+        "desc": "BudgetBuddy is a very simple budget tracking application that allows users to track their income and expenses. It is built using React and the backend is a simple google sheet that is updated using google apps-script. The idea was to create a simple and easy to use budget tracking application that is free and user's data is stored in their own google sheet.",
         "summary": "budget tracking application built using React and a google sheet",
+        "notableFeatures": [
+            "Free and user's data is stored in their own google sheet",
+            "Simple and easy to use interface",
+            "Open source and user can host their own instance of the application",
+            "No need to sign up or login to use the application"
+        ],
         "tech": [
             "react",
             "google apps-script",
             "tailwind",
             "nginx",
             "docker",
-            "github-actions"
+            "github-actions",
+            "google-apps-script"
         ],
         "img": "images/budgetbuddy.png",
         "github": "https://github.com/mjhossain/budget-app",
@@ -44,8 +51,12 @@
     {
         "id": 3,
         "name": "Films By Zakir",
-        "desc": "Portfolio website for a wedding filmmaker based out of New York City",
+        "desc": "Needed to create a website for my side hustle as a wedding filmmaker based out of New York City. The website serves as a portfolio for my work and also a way to showcase my work to potential clients. Additionally, users can contact me through the website to get in touch with me.",
         "summary": "Portfolio website for a wedding filmmaker based out of New York City",
+        "notableFeatures": [
+            "Lightweight and fast website that is hosted on a self-managed Raspberry Pi server",
+            "Video gallery that is hosted on Youtube and embedded into the website"
+        ],
         "tech": [
             "react",
             "emailjs",
@@ -64,6 +75,11 @@
         "name": "NYC Crime Visualizer",
         "desc": "This project is a comprehensive data analysis and visualization initiative developed as part of a school assignment. The primary objective was to explore and understand crime trends in New York City using publicly available data from the NYC Open Data portal.",
         "summary": "data analysis and visualization initiative developed as part of a school assignment",
+        "notableFeatures": [
+            "Used publicly available data from the NYC Open Data portal",
+            "Used pandas to analyze the data",
+            "Used Folium to create the visualization"
+        ],
         "img": "images/crime-visual.png",
         "tech": [
             "python",
@@ -80,6 +96,10 @@
         "name": "File Copier",
         "desc": "A school project created that takes a csv file that consits of list of file names and copies them from selected source to destination",
         "summary": "school project created that copies files from a source to a destination based on a csv file",
+        "notableFeatures": [
+            "Used java to create the application",
+            "Used javax.swing to create the GUI"
+        ],
         "tech": [
             "java",
             "javax"
@@ -95,10 +115,17 @@
         "name": "Powershell Scripts",
         "desc": "This project involves the development and deployment of a series of automation scripts tailored for Managed Service Provider (MSP) clients. These automated processes span both Azure cloud environments and on-premises server infrastructures.",
         "summary": "automation scripts for MSP clients",
+        "notableFeatures": [
+            "PowerShell scripts to automate tasks in Azure and on-premises servers",
+            "Automated business processes to save time and reduce manual errors",
+            "Utilized Microsoft Power Automate to create sophisticated automation workflows"
+        ],
         "tech": [
             "powershell",
+            "microsoft-power-automate",
             "azure",
-            "microsoft-server"
+            "microsoft-server",
+            "google-apps-script"
         ],
         "img": "images/powershell.png",
         "github": "",
