@@ -151,19 +151,19 @@
 }
 
 .btns>a {
-    height: 8px;
+    height: 100%;
     width: auto;
-    background-color: #111112;
+    background-color: #61ce70;
     border: none;
-    color: white;
+    color: #111112;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    /* border-radius: 5px; */
+    padding: 2px 5px;
+    border-radius: 5px;
     font-family: 'VT323', monospace;
-    font-size: 0.5em;
+    font-size: 0.7em;
     cursor: pointer;
     /* The position below allows the link to work due to an image in the div acting as a design element: coder-bot */
     position: relative;
