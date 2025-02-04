@@ -14,9 +14,11 @@ export default function Projects() {
     })
 
     return(
-        <div className="projects" id="projects" >
-            {/* <img src={CoderBot} className='coder-bot' /> */}
-            <h1>Projects</h1>
+        <div className="projects" id="projects">
+            <div className="projects-header">
+                <h1>Projects</h1>
+                <p className="projects-subtitle">Explore my technical creations and experiments</p>
+            </div>
             <div className="project-cards">
                {projects}
             </div>
