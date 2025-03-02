@@ -6,7 +6,7 @@ const MediumArticles = () => {
     const [articles, setArticles] = useState([]);
 
     function extractURL(text) {
-        const urlRegex = /http[s]?:\/\/.*\.(jpg|png)/g;
+        const urlRegex = /http[s]?:\/\/.*\.(jpg|png|jpeg)/g;
         const matches = text.match(urlRegex);
         return matches ? matches[0] : null;
     }
