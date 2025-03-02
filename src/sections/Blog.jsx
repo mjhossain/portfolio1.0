@@ -31,6 +31,8 @@ const MediumArticles = () => {
             <div className="articleBox">
                 {articles.map((article, index) => {
                     const imgLink = extractURL(article.content);
+                    console.log(article);
+
                     return (
                         <a href={article.link} target='_blank' key={index} className='articleCard'>
                             <img

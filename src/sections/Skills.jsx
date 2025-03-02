@@ -12,13 +12,14 @@ export default function Skills() {
                 <div className="skills-showcase">
                     <div className="skills-grid">
                         <div className="skill-card">
-                            <h2>Development</h2>
+                            <h2>Languages / Frameworks</h2>
                             <div className="skill-items">
                                 <span>Python</span>
                                 <span>Powershell</span>
                                 <span>Bash</span>
                                 <span>Javascript</span>
                                 <span>SQL</span>
+                                <span>Go</span>
                                 <span>React</span>
                                 <span>Node.js</span>
                                 <span>Next.js</span>
@@ -28,17 +29,20 @@ export default function Skills() {
                             </div>
                         </div>
                         <div className="skill-card">
-                            <h2>Operations</h2>
+                            <h2>Tools / Operations</h2>
                             <div className="skill-items">
                                 <span>CI/CD</span>
-                                <span>AWS</span>
+                                <span>AWS Cloud</span>
                                 <span>Power Automate</span>
+                                <span>Power BI</span>
+                                <span>PowerApps</span>
                                 <span>Docker</span>
                                 <span>Github Actions</span>
                                 <span>Terraform</span>
                                 <span>Ansible</span>
                                 <span>Jenkins</span>
                                 <span>Networking</span>
+                                <span>Kubernetes</span>
                             </div>
                         </div>
                         {/* <div className="skill-card">
