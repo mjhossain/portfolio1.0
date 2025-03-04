@@ -72,7 +72,7 @@ const Shell = () => {
                     <span className="highlight">Title: </span>, project.name, <br />,
                     <span className="highlight">Description: </span>, project.desc, <br />,
                     <span className="highlight">Technologies: </span>, project.tech.join(', '), <br />,
-                    <span className="highlight">View Project: </span>, <a href={project.link} target='_blank'>{project.viewType}</a>, <br />,
+                    <span className="highlight">View Project: </span>, <a href={project.demo} target='_blank'>{project.viewType}</a>, <br />,
                 ];
             }
 
