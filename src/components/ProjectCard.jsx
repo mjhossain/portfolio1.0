@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TechStack from "./TechStack"
+import ProjectModal from './ProjectModal';
 
 export default function ProjectCard(props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,36 +26,11 @@ export default function ProjectCard(props) {
                 </div>
             </div>
 
-            {isModalOpen && (
-                <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <button className="close-modal" onClick={() => setIsModalOpen(false)}>
-                            &times;
-                        </button>
-                        <h3>{props.name}</h3>
-                        <p className='overview'>Core Technologies:</p>
-                        <div className="tech-stack">
-                            {tech_stack}
-                        </div>
-                        <p className='overview'>Idea:</p>
-                        <p className='pj-desc'>{props.desc}</p>
-                        {props.deployment && <p className='overview'>Dev & Ops:</p>}
-                        {props.deployment && <p className='pj-desc'>{props.deployment}</p>}
-                        {props.notableFeatures && <p className='overview'>Notable Features:</p>}
-                        {props.notableFeatures && (
-                            <ul className='feature-list'>
-                                {props.notableFeatures.map((feature, index) => (
-                                    <li key={index} className='pj-desc'>{feature}</li>
-                                ))}
-                            </ul>
-                        )}
-                        <div className="modal-buttons">
-                            {props.github && <a href={props.github} target="_blank" rel="noopener noreferrer">GitHub</a>}
-                            {props.demo && <a href={props.demo} target="_blank" rel="noopener noreferrer">Live Demo</a>}
-                        </div>
-                    </div>
-                </div>
-            )}
+            <ProjectModal 
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                project={props}
+            />
         </>
     )
 }

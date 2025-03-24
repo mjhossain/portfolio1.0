@@ -176,7 +176,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(17, 17, 18, 0.95);
+    background-color: rgba(17, 17, 18, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +184,6 @@
 }
 
 .modal-content {
-    background: #1e1e1e;
     padding: 30px;
     border-radius: 12px;
     max-width: 800px;
@@ -194,9 +193,7 @@
     position: relative;
     color: #f2f2f2;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
     border: 1px solid #333;
     box-shadow: 0 0 20px rgba(97, 206, 112, 0.2);
@@ -296,4 +293,102 @@
     color: #61ce70;
     border-color: #61ce70;
     transform: translateY(-2px);
+}
+
+/* Gallery grid for multiple images */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin: 15px 0 25px 0;
+}
+
+.gallery-item {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid #333;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Single image styling - COMPLETELY REVISED */
+.single-image-container {
+    width: 100%;
+    margin: 15px 0 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.single-image-wrapper {
+    max-width: 100%;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.single-gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Ensure modal content can scroll and has proper padding */
+.modal-content {
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(97, 206, 112, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+    
+    .modal-content {
+        padding: 20px 15px;
+        width: 95%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .modal-content {
+        max-width: 900px;
+        padding: 35px;
+    }
+}
+
+/* Remove any lightbox styling that might be present */
+.lightbox, .lightbox-content, .close-lightbox {
+    display: none;
 }

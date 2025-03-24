@@ -20,7 +20,12 @@
         "img": "images/portfolio.png",
         "github": "https://github.com/mjhossain/portfolio1.0",
         "demo": "",
-        "viewType": "none"
+        "viewType": "none",
+        "gallery": [
+            "images/portfolio.png",
+            "images/xtrack.png",
+            "images/filmsbyz.png"
+        ]
     },
     {
         "id": 2,
@@ -68,7 +73,10 @@
         "demo": "https://filmsbyzakir.com",
         "viewType": "Website",
         "github": "",
-        "link": ""
+        "link": "",
+        "gallery": [
+            "images/filmsbyz.png"
+        ]
     },
     {
         "id": 4,
