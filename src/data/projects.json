@@ -22,9 +22,7 @@
         "demo": "",
         "viewType": "none",
         "gallery": [
-            "images/portfolio.png",
-            "images/xtrack.png",
-            "images/filmsbyz.png"
+            "images/portfolio.png"
         ]
     },
     {
@@ -51,7 +49,10 @@
         "github": "https://github.com/mjhossain/budget-app",
         "demo": "https://budget.mointech.dev",
         "viewType": "Github Repo",
-        "link": "https://github.com/mjhossain/budget-app"
+        "link": "https://github.com/mjhossain/budget-app",
+        "gallery": [
+            "images/budgetbuddy.png"
+        ]
     },
     {
         "id": 3,
@@ -97,7 +98,10 @@
         "demo": "",
         "github": "https://github.com/mjhossain/crime-visualization",
         "viewType": "Github Repo",
-        "link": "https://github.com/mjhossain/crime-visualization"
+        "link": "https://github.com/mjhossain/crime-visualization",
+        "gallery": [
+            "images/crime-visual.png"
+        ]
     },
     {
         "id": 5,
@@ -116,7 +120,10 @@
         "github": "https://github.com/mjhossain/FileCopier",
         "demo": "",
         "viewType": "Github Repo",
-        "link": "https://github.com/mjhossain/FileCopier"
+        "link": "https://github.com/mjhossain/FileCopier",
+        "gallery": [
+            "images/copier.png"
+        ]
     },
     {
         "id": 6,
@@ -139,6 +146,9 @@
         "github": "",
         "demo": "",
         "viewType": "Presented on Request",
-        "link": ""
+        "link": "",
+        "gallery": [
+            "images/powershell.png"
+        ]
     }
 ]
