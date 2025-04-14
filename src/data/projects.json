@@ -1,4 +1,30 @@
 [
+   { 
+    "id": 6,
+        "name": "Cat Food Tracker",
+        "desc": "I have 2 cats in my house and I wanted to track what type of food and when we or my wife give it to the cats. As we both work full time sometimes we end up overfeeding or even giving the same food to the cats. This is a simple app that allows us to track the food and the amount of food given to the cats.",
+        "summary": "A simple app to track the food and the amount of food given to the cats.",
+        "notableFeatures": [
+            "Used React to create a simple and easy to use interface.",
+            "Used Supabase to store the data.",
+            "Used Tailwind CSS to style the app.",
+            "Used Docker to containerize the app."
+        ],
+        "tech": [
+            "react",
+            "supabase",
+            "tailwind",
+            "docker"
+        ],
+        "img": "images/catfood.png",
+        "github": "https://github.com/mjhossain/catfoodtracker.git",
+        "demo": "",
+        "viewType": "Presented on Request",
+        "link": "",
+        "gallery": [
+            "images/catfood.png"
+        ]
+    },
     {
         "id": 4,
         "name": "Homelab",
@@ -136,32 +162,6 @@
             "images/airbnb-1.png",
             "images/airbnb-2.png",
             "images/airbnb-3.png"
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Powershell Scripts",
-        "desc": "This project involves the development and deployment of a series of automation scripts tailored for Managed Service Provider (MSP) clients. These automated processes span both Azure cloud environments and on-premises server infrastructures.",
-        "summary": "automation scripts for MSP clients",
-        "notableFeatures": [
-            "PowerShell scripts to automate tasks in Azure and on-premises servers",
-            "Automated business processes to save time and reduce manual errors",
-            "Utilized Microsoft Power Automate to create sophisticated automation workflows"
-        ],
-        "tech": [
-            "powershell",
-            "microsoft-power-automate",
-            "azure",
-            "microsoft-server",
-            "google-apps-script"
-        ],
-        "img": "images/powershell.png",
-        "github": "",
-        "demo": "",
-        "viewType": "Presented on Request",
-        "link": "",
-        "gallery": [
-            "images/powershell.png"
         ]
     }
 ]
