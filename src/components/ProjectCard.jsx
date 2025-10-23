@@ -15,11 +15,11 @@ export default function ProjectCard(props) {
                 <img src={props.img} alt="" />
                 <h5>{props.name}</h5>
                 <div className="info">
-                    <div className="btns">
-                        { props.github != "" ? <a href={props.github} target='_blank' >Github</a> : "" }
-                        { props.demo != "" ? <a href={props.demo} target='_blank' >Visit App</a> : "" }
-                    </div>
                     <p className='summary'>{props.summary}</p>
+                    <div className="btns">
+                        { props.github != "" ? <a href={props.github} target='_blank' onClick={(e) => e.stopPropagation()}><span>Github</span></a> : "" }
+                        { props.demo != "" ? <a href={props.demo} target='_blank' onClick={(e) => e.stopPropagation()}><span>Visit App</span></a> : "" }
+                    </div>
                     {/* <div className="tech-stack">
                         {tech_stack}
                     </div> */}
