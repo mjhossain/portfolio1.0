@@ -80,17 +80,17 @@ export default function Skills() {
             </div>
 
             <div className="logos-body">
-                <BiLogoReact fill='black' size='8em' className='logos logo-1' />
-                <BiLogoPython fill='black' size='10em' className='logos logo-2' />
-                <BiLogoDocker fill='black' size='10em' className='logos logo-3' />
-                <BiLogoFirebase fill='black' size='10em' className='logos logo-4' />
-                <BiLogoPostgresql fill='black' size='10em' className='logos logo-5' />
-                <BsFiletypeJson fill='black' size='6em' className='logos logo-6' />
-                <BiLogoJava fill='black' size='8em' className='logos logo-7' />
-                <SiFastapi fill='black' size='6em' className='logos logo-8' />
-                <SiGnubash fill='black' size='5em' className='logos logo-9' />
-                <BiLogoFlutter fill='black' size='7em' className='logos logo-10' />
-                <BiLogoMongodb fill='black' size='10em' className='logos logo-11' />
+                <BiLogoReact size='8em' className='logos logo-1' />
+                <BiLogoPython size='10em' className='logos logo-2' />
+                <BiLogoDocker size='10em' className='logos logo-3' />
+                <BiLogoFirebase size='10em' className='logos logo-4' />
+                <BiLogoPostgresql size='10em' className='logos logo-5' />
+                <BsFiletypeJson size='6em' className='logos logo-6' />
+                <BiLogoJava size='8em' className='logos logo-7' />
+                <SiFastapi size='6em' className='logos logo-8' />
+                <SiGnubash size='5em' className='logos logo-9' />
+                <BiLogoFlutter size='7em' className='logos logo-10' />
+                <BiLogoMongodb size='10em' className='logos logo-11' />
             </div>
         </div>
     )

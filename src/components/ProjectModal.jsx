@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TechStack from "./TechStack";
+import '../css/ProjectModal.css';
 
 export default function ProjectModal({ isOpen, onClose, project }) {
+    // Simple body scroll prevention
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add('modal-open');
+        } else {
+            document.body.classList.remove('modal-open');
+        }
+        
+        return () => {
+            document.body.classList.remove('modal-open');
+        };
+    }, [isOpen]);
+
     if (!isOpen) return null;
 
     // Determine if we have gallery images
@@ -12,7 +26,7 @@ export default function ProjectModal({ isOpen, onClose, project }) {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <button className="close-modal" onClick={onClose}>
-                    &times;
+                    ×
                 </button>
                 <h3>{project.name}</h3>
 
@@ -67,4 +81,4 @@ export default function ProjectModal({ isOpen, onClose, project }) {
             </div>
         </div>
     );
-} 
+}

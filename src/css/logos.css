@@ -1,9 +1,17 @@
 @import '../index.css';
 
+/* Logo styling - now theme-aware */
 .logos {
     position: absolute;
     opacity: 0.05;
-    color: black;
+    color: var(--text-primary);
+    fill: var(--text-primary);
+    transition: opacity var(--transition-slow), color var(--transition-slow);
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .logos {
+    opacity: 0.03;
 }
 
 .logo-1 {
