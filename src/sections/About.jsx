@@ -10,9 +10,11 @@ export default function About() {
             <div className="intro-text">
                 <h1 className="hi">Hi, I'm Mohammed</h1>
                 <br></br>
-                <p className="intro-para">As an IT Technician at DigaCore, my primary focus is on creating internal automation to enhance operational efficiency. I develop and maintain automation solutions using PowerShell, design and implement applications with Microsoft PowerApps, and manage database operations with SQL. Additionally, I collaborate with the service, security, engineering, and projects teams at DigaCore, serving as the scripting expert and creating internal applications for executives to ensure seamless integration across our IT infrastructure.
-                    <br /><br />
-                    Driven by a passion for cloud computing and automation, I am actively pursuing AWS Solutions Architect certification to transition into roles such as Cloud Engineer or Junior DevOps Engineer. With a focus on innovation, I aim to build secure, scalable, and efficient solutions that bridge infrastructure management and software development.</p>
+                <p className="intro-para">As an Automation Engineer at DigaCore, I specialize in developing intelligent business automation solutions that enhance efficiency and scalability across the organization. I build and maintain complex automation workflows using n8n and Microsoft Power Automate, while also managing two SaaS platforms focused on user account consolidation and distribution—one of which I developed from the ground up. <br /><br />
+
+Previously, as an IT Technician, I designed PowerShell-based automation tools, created internal applications with Microsoft PowerApps, and managed database operations using SQL, collaborating closely with service, security, engineering, and project teams to streamline IT operations.
+<br /><br />
+Driven by a deep passion for cloud computing, development, and automation, I’m now focused on advancing into Cloud Engineering, where I can design and deploy secure, scalable cloud infrastructures that bridge software development and IT operations.</p>
                 <div className="social-btns">
                     <a className="link-btn" href="https://github.com/mjhossain" target="_blank"><AiFillGithub />Github</a>
                     <a className="link-btn" href="https://www.linkedin.com/in/mohammedjhossain/" target="_blank"><AiFillLinkedin />LinkedIn</a>
