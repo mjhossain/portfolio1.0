@@ -43,48 +43,48 @@ font-family: 'Fira Code', monospace; - Code/Technical elements
 
 /* === Light Theme (Default) === */
 [data-theme="light"] {
-    /* Background Colors */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8f9fa;
-    --bg-tertiary: #e9ecef;
-    --bg-elevated: #ffffff;
-    --bg-overlay: rgba(255, 255, 255, 0.95);
+    /* Background Colors - Warm, sophisticated tones with character */
+    --bg-primary: #e8e6e1;
+    --bg-secondary: #d4d2cc;
+    --bg-tertiary: #c2c0b8;
+    --bg-elevated: #f0eeea;
+    --bg-overlay: rgba(232, 230, 225, 0.95);
     
-    /* Text Colors */
-    --text-primary: #1a1a1a;
-    --text-secondary: #4a5568;
-    --text-tertiary: #718096;
-    --text-inverse: #ffffff;
+    /* Text Colors - Strong contrast for excellent readability */
+    --text-primary: #1c1917;
+    --text-secondary: #292524;
+    --text-tertiary: #44403c;
+    --text-inverse: #fafaf9;
     
-    /* Accent Colors */
-    --accent-primary: #61ce70;
-    --accent-primary-hover: #4eb85e;
-    --accent-secondary: #45b257;
-    --accent-gradient: linear-gradient(135deg, #61ce70 0%, #34d399 50%, #10b981 100%);
-    --accent-gradient-alt: linear-gradient(135deg, #7ee787 0%, #61ce70 50%, #34b759 100%);
-    --text-on-accent: #000000;
+    /* Accent Colors - Vibrant emerald green that pops */
+    --accent-primary: #059669;
+    --accent-primary-hover: #047857;
+    --accent-secondary: #10b981;
+    --accent-gradient: linear-gradient(135deg, #047857 0%, #059669 50%, #10b981 100%);
+    --accent-gradient-alt: linear-gradient(135deg, #065f46 0%, #047857 50%, #059669 100%);
+    --text-on-accent: #ffffff;
     
-    /* Border Colors */
-    --border-primary: #e2e8f0;
-    --border-secondary: #cbd5e0;
-    --border-tertiary: #a0aec0;
+    /* Border Colors - Defined, visible separation */
+    --border-primary: #a8a29e;
+    --border-secondary: #78716c;
+    --border-tertiary: #57534e;
     
     /* Status Colors */
-    --success: #10b981;
-    --warning: #f59e0b;
-    --error: #ef4444;
-    --info: #3b82f6;
+    --success: #059669;
+    --warning: #ea580c;
+    --error: #dc2626;
+    --info: #2563eb;
     
-    /* Glass Effect */
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.18);
+    /* Glass Effect - Subtle warmth */
+    --glass-bg: rgba(240, 238, 234, 0.85);
+    --glass-border: rgba(168, 162, 158, 0.4);
     --backdrop-blur: blur(20px);
     
-    /* Card/Surface */
-    --card-bg: #ffffff;
-    --card-border: rgba(0, 0, 0, 0.08);
-    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
-    --card-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+    /* Card/Surface - Distinct layers with warmth */
+    --card-bg: #f5f3ef;
+    --card-border: rgba(87, 83, 78, 0.15);
+    --card-shadow: 0 4px 6px -1px rgba(28, 25, 23, 0.12);
+    --card-hover-shadow: 0 20px 25px -5px rgba(28, 25, 23, 0.15), 0 8px 10px -6px rgba(28, 25, 23, 0.12);
 }
 
 /* === Dark Theme === */
