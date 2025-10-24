@@ -159,10 +159,7 @@
         "viewType": "Github Repo",
         "link": "https://github.com/mjhossain/crime-visualization",
         "gallery": [
-            "images/airbnb.png",
-            "images/airbnb-1.png",
-            "images/airbnb-2.png",
-            "images/airbnb-3.png"
+            "images/crime-visual.png"
         ]
     }
 ]
