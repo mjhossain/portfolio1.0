@@ -1,34 +1,59 @@
 [
-   
     {
-        "id": 4,
-        "name": "Homelab",
-        "desc": "I have a hybrid homelab environment composed of a cluster of Raspberry Pi servers alongside a centralized Proxmox hypervisor running on a mini PC. The Raspberry Pi cluster serves as a distributed system, handling lightweight workloads, microservices, and some specific edge computing tasks. These Pis are networked together and often used for experimentation, Kubernetes deployments, and running containerized applications that don't require significant compute power.\n\nThe main backbone of the setup is the Proxmox hypervisor hosted on a mini PC, which acts as the central virtualization hub. This hypervisor is responsible for running the majority of my virtual machines (VMs), and Docker containers, which include critical services such as web servers, internal tools, monitoring solutions (UpTime Kuma), NAS servers, and various automation services. Some of the services hosted include my personal websites, reverse proxy setups (NGINX), CI/CD pipelines, and automation frameworks like Ansible and Home Assistant for IoT integrations.\n\nThe combination of the Proxmox hypervisor and Raspberry Pi cluster allows me to experiment with both centralized and distributed computing models while maintaining flexibility and scalability within my homelab.",
-        "summary": "A cluster of Raspberry Pi servers and a main Proxmox hypervisor running on a mini PC hosting all my containers, websites and automation services.",
+        "id": 7,
+        "name": "EvntManager",
+        "desc": "An event management web app designed for photographer and videographers to manage their events and clients. Being a wedding filmmaker myself, I know how important it is to have a way to manage events, deadlines, and client expectations.\n\nThis app allows creative professionals to manage all aspects of a shoot in a single place.",
+        "summary": "A web app to manage events and clients for photographer and videographers.",
         "notableFeatures": [
-            "Used Proxmox to create a hypervisor and host all my containers, websites and automation services.",
-            "Used Raspberry Pi servers as the nodes for my cluster.",
-            "Used WireGuard to create a secure and private network between the Raspberry Pi cluster and the Proxmox hypervisor."        
+            "NextJS with Supabase for the backend.",
+            "AI inspired UI/UX design.",
+            "Future proof system design for scalability.",
+            "Full CI/CD pipeline with Github Actions.",
+            "Dockerized for easy deployment."
         ],
         "tech": [
-            "proxmox",
-            "raspberry-pi",
+            "nextjs",
+            "supabase",
             "docker",
-            "nginx",
-            "uptime-kuma",
-            "home-assistant",
-            "wireguard"
+            "github-actions",
+            "cursor/ai"
         ],
-        "img": "images/homelab.png",
+        "img": "images/evntmanager.png",
         "github": "",
-        "demo": "",
-        "viewType": "Presented on Request",
+        "demo": "https://evntmanager.io",
+        "viewType": "Website",
+        "link": "https://evntmanager.io",
+        "gallery": [
+            "images/evntmanager.png",
+            "images/evntmanager-1.png",
+            "images/evntmanager-2.png",
+            "images/evntmanager-3.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Films By Zakir",
+        "desc": "Needed to create a website for my side hustle as a wedding filmmaker based out of New York City. The website serves as a portfolio for my work and also a way to showcase my work to potential clients. Additionally, users can contact me through the website to get in touch with me.",
+        "summary": "Portfolio website for a wedding filmmaker based out of New York City",
+        "notableFeatures": [
+            "Lightweight and fast website that is hosted on a self-managed Raspberry Pi server",
+            "Video gallery that is hosted on Youtube and embedded into the website"
+        ],
+        "tech": [
+            "react",
+            "emailjs",
+            "nginx",
+            "docker",
+            "github-actions"
+        ],
+        "img": "images/filmsbyz.png",
+        "demo": "https://filmsbyzakir.com",
+        "viewType": "Website",
+        "github": "",
         "link": "",
         "gallery": [
-            "images/homelab.png",
-            "images/homelab-1.png",
-            "images/homelab-2.png",
-            "images/homelab-3.png"
+            "images/filmsbyz.png",
+            "images/filmsbyz-1.png"
         ]
     },
     { 
@@ -57,32 +82,7 @@
             "images/catfood.png"
         ]
     },
-    {
-        "id": 1,
-        "name": "portfolio1.0",
-        "desc": "This website was created to showcase my skills and projects. It was created with an intention to teach myself React and also creating CI/CD piplines using Github Actions.",
-        "summary": "portfolio website hosted on a self-managed Raspberry Pi server",
-        "deployment": "The project's versioning is controlled through Github and the site is deployed using Docker and Github Actions. The site is hosted on a self-managed Raspberry Pi server. The intention behind such a setup is to learn  DevOps practices and also to have a quick and easy way to migrate to a new server.",
-        "notableFeatures": [
-            "Shell inspired design that gives users a unique and engaging experience to explore the website.",
-            "The project is hosted on a self-managed Raspberry Pi server.",
-            "Deployed as a Docker container on the server."
-        ],
-        "tech": [
-            "react",
-            "ci/cd",
-            "docker",
-            "nginx",
-            "github-actions"
-        ],
-        "img": "images/portfolio.png",
-        "github": "https://github.com/mjhossain/portfolio1.0",
-        "demo": "",
-        "viewType": "none",
-        "gallery": [
-            "images/portfolio.png"
-        ]
-    },
+
     {
         "id": 2,
         "name": "BudgetBuddy",
@@ -112,32 +112,7 @@
             "images/budgetbuddy.png"
         ]
     },
-    {
-        "id": 3,
-        "name": "Films By Zakir",
-        "desc": "Needed to create a website for my side hustle as a wedding filmmaker based out of New York City. The website serves as a portfolio for my work and also a way to showcase my work to potential clients. Additionally, users can contact me through the website to get in touch with me.",
-        "summary": "Portfolio website for a wedding filmmaker based out of New York City",
-        "notableFeatures": [
-            "Lightweight and fast website that is hosted on a self-managed Raspberry Pi server",
-            "Video gallery that is hosted on Youtube and embedded into the website"
-        ],
-        "tech": [
-            "react",
-            "emailjs",
-            "nginx",
-            "docker",
-            "github-actions"
-        ],
-        "img": "images/filmsbyz.png",
-        "demo": "https://filmsbyzakir.com",
-        "viewType": "Website",
-        "github": "",
-        "link": "",
-        "gallery": [
-            "images/filmsbyz.png",
-            "images/filmsbyz-1.png"
-        ]
-    },
+
     {
         "id": 5,
         "name": "NYC Crime Visualizer",
@@ -160,6 +135,37 @@
         "link": "https://github.com/mjhossain/crime-visualization",
         "gallery": [
             "images/crime-visual.png"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Homelab",
+        "desc": "I have a hybrid homelab environment composed of a cluster of Raspberry Pi servers alongside a centralized Proxmox hypervisor running on a mini PC. The Raspberry Pi cluster serves as a distributed system, handling lightweight workloads, microservices, and some specific edge computing tasks. These Pis are networked together and often used for experimentation, Kubernetes deployments, and running containerized applications that don't require significant compute power.\n\nThe main backbone of the setup is the Proxmox hypervisor hosted on a mini PC, which acts as the central virtualization hub. This hypervisor is responsible for running the majority of my virtual machines (VMs), and Docker containers, which include critical services such as web servers, internal tools, monitoring solutions (UpTime Kuma), NAS servers, and various automation services. Some of the services hosted include my personal websites, reverse proxy setups (NGINX), CI/CD pipelines, and automation frameworks like Ansible and Home Assistant for IoT integrations.\n\nThe combination of the Proxmox hypervisor and Raspberry Pi cluster allows me to experiment with both centralized and distributed computing models while maintaining flexibility and scalability within my homelab.",
+        "summary": "A cluster of Raspberry Pi servers and a main Proxmox hypervisor running on a mini PC hosting all my containers, websites and automation services.",
+        "notableFeatures": [
+            "Used Proxmox to create a hypervisor and host all my containers, websites and automation services.",
+            "Used Raspberry Pi servers as the nodes for my cluster.",
+            "Used WireGuard to create a secure and private network between the Raspberry Pi cluster and the Proxmox hypervisor."        
+        ],
+        "tech": [
+            "proxmox",
+            "raspberry-pi",
+            "docker",
+            "nginx",
+            "uptime-kuma",
+            "home-assistant",
+            "wireguard"
+        ],
+        "img": "images/homelab.png",
+        "github": "",
+        "demo": "",
+        "viewType": "Presented on Request",
+        "link": "",
+        "gallery": [
+            "images/homelab.png",
+            "images/homelab-1.png",
+            "images/homelab-2.png",
+            "images/homelab-3.png"
         ]
     }
 ]

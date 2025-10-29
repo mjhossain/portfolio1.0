@@ -14,18 +14,18 @@ export default function Skills() {
                         <div className="skill-card">
                             <h2>Languages / Frameworks</h2>
                             <div className="skill-items">
+                                <span>Git</span>
                                 <span>Python</span>
                                 <span>Powershell</span>
                                 <span>Bash</span>
                                 <span>Javascript</span>
                                 <span>SQL</span>
-                                <span>Go</span>
+                                <span>Supabase</span>
                                 <span>React</span>
                                 <span>Node.js</span>
                                 <span>Next.js</span>
-                                <span>Flutter</span>
-                                <span>Dart</span>   
-                                <span>Java</span>
+                                <span>Cursor/AI</span>
+
                             </div>
                         </div>
                         <div className="skill-card">
@@ -39,10 +39,8 @@ export default function Skills() {
                                 <span>Docker</span>
                                 <span>Github Actions</span>
                                 <span>Terraform</span>
-                                <span>Ansible</span>
                                 <span>Jenkins</span>
-                                <span>Networking</span>
-                                <span>Kubernetes</span>
+                                <span>N8N</span>
                             </div>
                         </div>
                         {/* <div className="skill-card">

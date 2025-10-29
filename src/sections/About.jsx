@@ -10,11 +10,11 @@ export default function About() {
             <div className="intro-text">
                 <h1 className="hi">Hi, I'm Mohammed</h1>
                 <br></br>
-                <p className="intro-para">As an Automation Engineer at DigaCore, I specialize in developing intelligent business automation solutions that enhance efficiency and scalability across the organization. I build and maintain complex automation workflows using n8n and Microsoft Power Automate, while also managing two SaaS platforms focused on user account consolidation and distribution—one of which I developed from the ground up. <br /><br />
+                <p className="intro-para">As an Automation Engineer at DigaCore, I design and implement intelligent automation systems that improve efficiency, scalability, and reliability across the organization. I build and maintain complex workflows using n8n and Microsoft Power Automate, integrating multiple business systems to eliminate repetitive tasks and optimize user lifecycle management.<br /><br />
 
-Previously, as an IT Technician, I designed PowerShell-based automation tools, created internal applications with Microsoft PowerApps, and managed database operations using SQL, collaborating closely with service, security, engineering, and project teams to streamline IT operations.
-<br /><br />
-Driven by a deep passion for cloud computing, development, and automation, I’m now focused on advancing into Cloud Engineering, where I can design and deploy secure, scalable cloud infrastructures that bridge software development and IT operations.</p>
+I also lead the modernization of internal SaaS platforms, rebuilding legacy infrastructure into Next.js, Python, and Supabase applications with containerized deployments, CI/CD pipelines, and robust authentication systems — one of which I engineered from the ground up. <br /><br />
+
+Driven by a passion for automation, DevOps, and AI-assisted development, I focus on creating scalable, cloud-ready solutions that bridge software engineering and IT operations — enabling businesses to operate smarter, faster, and more securely.</p>
                 <div className="social-btns">
                     <a className="link-btn" href="https://github.com/mjhossain" target="_blank"><AiFillGithub />Github</a>
                     <a className="link-btn" href="https://www.linkedin.com/in/mohammedjhossain/" target="_blank"><AiFillLinkedin />LinkedIn</a>
