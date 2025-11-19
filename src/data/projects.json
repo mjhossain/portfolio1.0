@@ -1,5 +1,35 @@
 [
     {
+        "id": 8,
+        "name": "KarUpKeep",
+        "desc": "KarUpKeep is an AI-powered vehicle maintenance tracking application that helps users manage their car's health through smart recommendations, automated reminders, and detailed history logging.",
+        "summary": "A SaaS application to manage vehicle maintenance and health.",
+        "notableFeatures": [
+            "AI-Powered Intelligence",
+            "Multi-Vehicle Garage",
+            "Smart Scheduling & Reminders",
+            "Full CI/CD pipeline with Github Actions.",
+            "Dockerized for easy deployment."
+        ],
+        "tech": [
+            "nextjs",
+            "supabase",
+            "docker",
+            "github-actions",
+            "typescript"
+        ],
+        "img": "images/karupkeep.png",
+        "github": "",
+        "demo": "https://karupkeep.com",
+        "viewType": "Website",
+        "link": "https://karupkeep.com",
+        "gallery": [
+            "images/karupkeep.png",
+            "images/karupkeep-1.png",
+            "images/karupkeep-2.png",
+            "images/karupkeep-3.png"
+        ]
+    },{
         "id": 7,
         "name": "EvntManager",
         "desc": "An event management web app designed for photographer and videographers to manage their events and clients. Being a wedding filmmaker myself, I know how important it is to have a way to manage events, deadlines, and client expectations.\n\nThis app allows creative professionals to manage all aspects of a shoot in a single place.",
@@ -135,37 +165,6 @@
         "link": "https://github.com/mjhossain/crime-visualization",
         "gallery": [
             "images/crime-visual.png"
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Homelab",
-        "desc": "I have a hybrid homelab environment composed of a cluster of Raspberry Pi servers alongside a centralized Proxmox hypervisor running on a mini PC. The Raspberry Pi cluster serves as a distributed system, handling lightweight workloads, microservices, and some specific edge computing tasks. These Pis are networked together and often used for experimentation, Kubernetes deployments, and running containerized applications that don't require significant compute power.\n\nThe main backbone of the setup is the Proxmox hypervisor hosted on a mini PC, which acts as the central virtualization hub. This hypervisor is responsible for running the majority of my virtual machines (VMs), and Docker containers, which include critical services such as web servers, internal tools, monitoring solutions (UpTime Kuma), NAS servers, and various automation services. Some of the services hosted include my personal websites, reverse proxy setups (NGINX), CI/CD pipelines, and automation frameworks like Ansible and Home Assistant for IoT integrations.\n\nThe combination of the Proxmox hypervisor and Raspberry Pi cluster allows me to experiment with both centralized and distributed computing models while maintaining flexibility and scalability within my homelab.",
-        "summary": "A cluster of Raspberry Pi servers and a main Proxmox hypervisor running on a mini PC hosting all my containers, websites and automation services.",
-        "notableFeatures": [
-            "Used Proxmox to create a hypervisor and host all my containers, websites and automation services.",
-            "Used Raspberry Pi servers as the nodes for my cluster.",
-            "Used WireGuard to create a secure and private network between the Raspberry Pi cluster and the Proxmox hypervisor."        
-        ],
-        "tech": [
-            "proxmox",
-            "raspberry-pi",
-            "docker",
-            "nginx",
-            "uptime-kuma",
-            "home-assistant",
-            "wireguard"
-        ],
-        "img": "images/homelab.png",
-        "github": "",
-        "demo": "",
-        "viewType": "Presented on Request",
-        "link": "",
-        "gallery": [
-            "images/homelab.png",
-            "images/homelab-1.png",
-            "images/homelab-2.png",
-            "images/homelab-3.png"
         ]
     }
 ]
